@@ -45,6 +45,11 @@
 	}
 }
 
+.red {
+	color: rgb(170, 12, 12);
+	text-shadow: 1px 1px 3px #000;
+}
+
 @keyframes fadePicture {
 	0% {
 		background-image: linear-gradient(
