@@ -1,5 +1,5 @@
 .header {
-	background: rgba(0, 0, 0, 0.767);
+	background: rgba(0, 0, 0, 0.479);
 	width: 100%;
 	color: rgb(223, 223, 223);
 	height: 50px;
@@ -28,4 +28,18 @@
 
 .header-li:hover {
 	color: #fff;
+}
+
+@media (max-width: 500px) {
+	.header-logo {
+		font-size: 1rem;
+	}
+
+	.header-li {
+		font-size: 0.8rem;
+	}
+
+	.header-container {
+		width: 90%;
+	}
 }
