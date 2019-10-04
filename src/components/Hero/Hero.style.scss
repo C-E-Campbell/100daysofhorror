@@ -5,11 +5,12 @@
 			rgba(0, 0, 0, 0.199),
 			rgba(0, 0, 0, 0.301)
 		),
-		url(../../assetsAndApi/assets/hero-img.min.jpeg);
+		url(../../assetsAndApi/assets/image3.jpeg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: #fff;
+	animation: fadePicture 15s infinite ease-in;
 }
 //font-family: 'Muli', sans-serif;
 .hero-text-container {
@@ -41,5 +42,34 @@
 			color: #333;
 			border-radius: 2px;
 		}
+	}
+}
+
+@keyframes fadePicture {
+	0% {
+		background-image: linear-gradient(
+				90deg,
+				rgba(0, 0, 0, 0.199),
+				rgba(0, 0, 0, 0.301)
+			),
+			url(../../assetsAndApi/assets/image3.jpeg);
+	}
+
+	33% {
+		background-image: linear-gradient(
+				90deg,
+				rgba(0, 0, 0, 0.199),
+				rgba(0, 0, 0, 0.301)
+			),
+			url(../../assetsAndApi/assets/image2.jpeg);
+	}
+
+	66% {
+		background-image: linear-gradient(
+				90deg,
+				rgba(0, 0, 0, 0.199),
+				rgba(0, 0, 0, 0.301)
+			),
+			url(../../assetsAndApi/assets/image1.jpeg);
 	}
 }
