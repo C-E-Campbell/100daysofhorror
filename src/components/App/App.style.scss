@@ -1,3 +1,19 @@
+// font-family: 'Merriweather', serif;
+// font-family: 'Muli', sans-serif;
+
+* {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
+	background-color: #000;
+	font-family: "Muli", sans-serif;
+}
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
 }
