@@ -1,16 +1,17 @@
 import React from "react";
+import Header from "../Header/Header";
 import "./Hero.style.scss";
 
 const Hero = () => {
 	return (
 		<div className='hero'>
-			<div className='hero-cta-box'>
-				{/* <h1>Test Words</h1>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-					praesentium?
-				</p>
-				<a href='#'>Test Btn</a> */}
+			<Header />
+			<div className='hero-text-container'>
+				<div className='hero-cta-box'>
+					<h1>Can you live through the challenge?</h1>
+					<p>Tempt fate. Take the 100 day horror movie challenge.</p>
+					<a href='#'>Read More</a>
+				</div>
 			</div>
 		</div>
 	);
