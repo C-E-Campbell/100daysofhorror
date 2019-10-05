@@ -31,6 +31,7 @@ export default class MovieDescription extends Component {
 			<div className='movie-description-box'>
 				<h1>{Title}</h1>
 				<img src={Poster} alt='movie poster' />
+				<h5 className='trailer-link'>Click here to watch movie trailer</h5>
 				<h3>{`Cast: ${Actors}`}</h3>
 				<p>{`Plot: ${Plot}`}</p>
 				<p>{`Director: ${Director}`}</p>

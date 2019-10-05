@@ -19,3 +19,12 @@
 		margin: 10px;
 	}
 }
+
+.trailer-link {
+	color: rgb(240, 95, 51);
+	text-decoration-line: underline;
+
+	&:hover {
+		color: rgb(243, 134, 97);
+	}
+}
