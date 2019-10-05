@@ -5,7 +5,7 @@ export default class UserBox extends Component {
 		return (
 			<div className='user-box'>
 				<div className='user-box-data'>
-					<h1>User's Name</h1>
+					<h1>Charles Campbell</h1>
 					<h5>Challenge Start Date PROP HERE</h5>
 					<h5>Challenge End Date PROP HERE</h5>
 				</div>

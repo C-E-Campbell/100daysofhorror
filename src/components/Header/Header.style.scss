@@ -16,7 +16,12 @@
 }
 
 .header-logo {
+	background-image: url("../../assetsAndApi/assets/resizedlogo.png");
+	background-size: cover;
 	font-size: 1.6rem;
+	width: 300px;
+	height: 100%;
+
 	&:hover {
 		color: #fff;
 	}
