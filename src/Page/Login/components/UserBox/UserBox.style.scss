@@ -1,0 +1,41 @@
+.user-box {
+	display: flex;
+	align-items: center;
+
+	justify-content: space-evenly;
+	background-color: #444;
+	grid-column: 2/6;
+	grid-row: 2/5;
+	border-radius: 4px;
+	padding: 1em;
+	color: rgb(235, 235, 235);
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		margin: 0;
+		padding: 5px 0;
+	}
+}
+
+.user-box-percentage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	p {
+		margin: 0;
+		padding: 5px;
+	}
+}
+
+.user-box-data {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 100%;
+}

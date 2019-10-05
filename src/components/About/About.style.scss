@@ -1,0 +1,19 @@
+.about {
+	width: 100%;
+	text-align: center;
+}
+h2 {
+	color: #fff;
+	font-family: "Merriweather", serif;
+	font-weight: 300;
+	font-size: 2rem;
+}
+.about-container {
+	margin: 0 auto;
+	max-width: 60%;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	color: #fff;
+}

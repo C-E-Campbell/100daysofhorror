@@ -1,0 +1,8 @@
+.dashboard {
+	height: 110vh;
+	background-color: #222;
+	display: grid;
+	grid-gap: 3px;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+}

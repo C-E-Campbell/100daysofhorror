@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.style.scss";
 import Hero from "../Hero/Hero";
+import About from "../About/About";
 class App extends React.Component {
 	constructor() {
 		super();
@@ -10,7 +11,8 @@ class App extends React.Component {
 	render() {
 		return (
 			<div>
-				<Hero />
+				{/* <Hero /> */}
+				<About />
 			</div>
 		);
 	}
