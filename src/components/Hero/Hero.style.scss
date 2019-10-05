@@ -1,5 +1,5 @@
 .hero {
-	height: 90vh;
+	height: 96vh;
 	background-image: linear-gradient(
 			90deg,
 			rgba(0, 0, 0, 0.199),
@@ -48,6 +48,7 @@
 .red {
 	color: rgb(240, 95, 51);
 	text-shadow: 1px 1px 3px #000;
+	font-family: "Merriweather", serif;
 }
 
 @keyframes fadePicture {
