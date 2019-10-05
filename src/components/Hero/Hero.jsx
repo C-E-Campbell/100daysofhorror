@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../Header/Header";
+import { Link, animateScroll as scroll } from "react-scroll";
 import "./Hero.style.scss";
 
 const Hero = () => {
@@ -13,7 +14,7 @@ const Hero = () => {
 						<span className='red'>Tempt Fate. </span>Take the 100 day horror
 						movie challenge.
 					</p>
-					<a href='#'>Read More</a>
+					<a href='#footer'>Read More</a>
 				</div>
 			</div>
 		</div>
