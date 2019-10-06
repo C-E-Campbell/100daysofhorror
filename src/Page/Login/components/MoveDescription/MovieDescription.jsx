@@ -12,7 +12,7 @@ export default class MovieDescription extends Component {
 	//4c3ee338
 	componentDidMount() {
 		axios
-			.get("http://www.omdbapi.com/?apikey=4c3ee338&i=tt0087800&plot=full")
+			.get("http://www.omdbapi.com/?apikey=4c3ee338&i=tt0324216&plot=full")
 			.then(response => this.setState({ movie: response.data }));
 	}
 

@@ -1,0 +1,82 @@
+{
+	"The Exorcist": {
+		"id": 1,
+		"title": "the exorcist",
+		"runtime": 122,
+		"omdbID": "tt0070047",
+		"youtubeID": "YDGw1MTEe9k",
+		"comment": ""
+	},
+	"The Shining": {
+		"id": 2,
+		"title": "the shining",
+		"runtime": 146,
+		"omdbID": "tt0081505",
+		"youtubeID": "S014oGZiSdI",
+		"comment": ""
+	},
+	"Psycho": {
+		"id": 3,
+		"title": "psycho",
+		"runtime": 109,
+		"omdbID": "tt0054215",
+		"youtubeID": "Wz719b9QUqY",
+		"comment": ""
+	},
+	"The Texas Chainsaw Massacre": {
+		"id": 4,
+		"title": "the texas chainsaw massacre",
+		"runtime": 98,
+		"omdbID": "tt0324216",
+		"youtubeID": "T3TILW0O_C0",
+		"comment": ""
+	},
+	"Halloween": {
+		"id": 5,
+		"title": "halloween",
+		"runtime": 91,
+		"omdbID": "tt0077651",
+		"youtubeID": "xHuOtLTQ_1I",
+		"comment": ""
+	},
+	"Rosemary's Baby": {
+		"id": 6,
+		"title": "rosemarys baby",
+		"runtime": 137,
+		"omdbID": "tt0063522",
+		"youtubeID": "BjpA6IH_Skc",
+		"comment": ""
+	},
+	"Carrie": {
+		"id": 7,
+		"title": "carrie",
+		"runtime": 137,
+		"omdbID": "tt0063522",
+		"youtubeID": "YuO26oJQLVs",
+		"comment": ""
+	},
+	"Poltergeist": {
+		"id": 8,
+		"title": "poltergeist",
+		"runtime": 114,
+		"omdbID": "tt0084516",
+		"youtubeID": "9eZgEKjYJqA",
+		"comment": ""
+	},
+	"The Silence of the Lambs": {
+		"id": 9,
+		"title": "the silence of the lambs",
+		"runtime": 118,
+		"omdbID": "tt0102926",
+		"youtubeID": "W6Mm8Sbe__o",
+		"comment": ""
+	},
+	"The Omen": {
+		"id": 10,
+		"title": "the omen",
+		"runtime": 111,
+		"omdbID": "tt0075005",
+		"youtubeID": "sS-sXcx30O4",
+		"comment": ""
+	}
+}
