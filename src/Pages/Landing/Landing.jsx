@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "../../Components/Hero/Hero";
 import About from "../../Components/About/About";
+import AskUs from "../../Components/AskUs/AskUs";
 import Footer from "../../Components/Footer/Footer";
 class Landing extends React.Component {
 	constructor() {
@@ -13,6 +14,7 @@ class Landing extends React.Component {
 			<div>
 				<Hero />
 				<About />
+				<AskUs />
 				<Footer />
 			</div>
 		);

@@ -6,6 +6,7 @@ import UserBox from "../../Components/UserBox/UserBox";
 import MovieList from "../../Components/MovieList/MovieList";
 import MovieDescription from "../../Components/MoveDescription/MovieDescription";
 import Header from "../../Components/Header/Header";
+import Footer from "../../Components/Footer/Footer";
 import Axios from "axios";
 export default class Login extends Component {
 	constructor(props) {
@@ -49,6 +50,7 @@ export default class Login extends Component {
 					<MovieList getID={this.getID} movies={this.state.movieList} />
 					<MovieDescription />
 				</div>
+				<Footer />
 			</div>
 		);
 	}
