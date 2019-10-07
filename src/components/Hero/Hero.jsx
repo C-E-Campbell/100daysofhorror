@@ -13,7 +13,7 @@ const Hero = () => {
 						<span className='red'>Tempt Fate. </span>Take the 100 day horror
 						movie challenge.
 					</p>
-					<a href='#footer'>Read More</a>
+					<a href='#rules'>Read More</a>
 				</div>
 			</div>
 		</div>

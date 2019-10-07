@@ -13,7 +13,8 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "react-scroll": "^1.7.14",
-    "scroll-out": "^2.2.7"
+    "scroll-out": "^2.2.7",
+    "semantic-ui-react": "^0.88.1"
   },
   "scripts": {
     "start": "react-scripts start",

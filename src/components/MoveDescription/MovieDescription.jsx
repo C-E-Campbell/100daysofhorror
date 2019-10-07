@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 import "./MovieDescription.style.scss";
 import axios from "axios";
+
+import VideoModal from "../VideoModal/VideoModal";
+
 export default class MovieDescription extends Component {
 	constructor() {
 		super();
 		this.state = {
-			movie: {}
+			movie: {},
+			youtube: []
 		};
 	}
 
@@ -14,6 +18,12 @@ export default class MovieDescription extends Component {
 		axios
 			.get("http://www.omdbapi.com/?apikey=4c3ee338&i=tt0075005&plot=full")
 			.then(response => this.setState({ movie: response.data }));
+
+		axios
+			.get(
+				"https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyC-SL7LVSFJ19W8DuJzJKtwJWtvj_nxi7o'"
+			)
+			.then(response => console.log(response));
 	}
 
 	render() {
@@ -31,7 +41,7 @@ export default class MovieDescription extends Component {
 			<div className='movie-description-box'>
 				<h1>{Title}</h1>
 				<img src={Poster} alt='movie poster' />
-				<h5 className='trailer-link'>Click here to watch movie trailer</h5>
+				<VideoModal />
 				<h3>{`Cast: ${Actors}`}</h3>
 				<p>{`Plot: ${Plot}`}</p>
 				<p>{`Director: ${Director}`}</p>
