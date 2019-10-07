@@ -1,12 +1,19 @@
 import React from "react";
-
+import "./AskUs.style.scss";
 const AskUs = () => {
 	return (
-		<div>
-			<h2>Would you like to see movie added to the list? Send us a note!</h2>
-			<form>
-				<input type='text' placeholder='Add this movie please' />
-			</form>
+		<div className='ask-us'>
+			<div className='ask-us-container'>
+				<div>
+					<h2 data-aos='fade-up'>
+						Would you like to see movie added to the list? Send us a note!
+					</h2>
+					<form>
+						<input type='text' placeholder='Add this movie!' />
+						<button>Send</button>
+					</form>
+				</div>
+			</div>
 		</div>
 	);
 };

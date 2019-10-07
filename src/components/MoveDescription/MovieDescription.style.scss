@@ -1,8 +1,9 @@
 .movie-description-box {
 	grid-row: 3/11;
 	grid-column: 2/6;
-	background: linear-gradient(rgba(19, 18, 18, 0.98), rgba(24, 23, 23, 0.98)),
-		url(../../Assets/assets/userbg.png);
+	background: linear-gradient(rgba(19, 18, 18, 0.95), rgba(24, 23, 23, 0.96)),
+		url(../../Assets/assets/userbg.jpg);
+	background-size: cover;
 	border-radius: 4px;
 	color: rgb(235, 235, 235);
 	border: 2px solid #333;

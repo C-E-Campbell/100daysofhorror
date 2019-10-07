@@ -11,10 +11,12 @@
 			sizes="32x32"
 			href="./favicon-32x32.png"
 		/>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<script
 			src="https://kit.fontawesome.com/3ea75a5cd4.js"
 			crossorigin="anonymous"
 		></script>
+
 		<link
 			href="https://fonts.googleapis.com/css?family=Merriweather|Muli:400,700&display=swap"
 			rel="stylesheet"
@@ -24,5 +26,13 @@
 	</head>
 	<body>
 		<div id="root"></div>
+
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				duration: 700,
+				once: true
+			});
+		</script>
 	</body>
 </html>

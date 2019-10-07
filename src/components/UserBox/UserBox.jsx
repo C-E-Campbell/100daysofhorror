@@ -12,7 +12,7 @@ export default class UserBox extends Component {
 						<h5>{`Difficulty: ${this.props.difficulty}`}</h5>
 					</div>
 				</div>
-				<div className='user-box-percentage'>
+				<div data-aos='fade-left' className='user-box-percentage'>
 					<p>Percent Completed</p>
 					<p className='orange'>0%</p>
 				</div>
