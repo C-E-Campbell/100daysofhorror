@@ -5,6 +5,7 @@ import "./Login.style.scss";
 import UserBox from "../../Components/UserBox/UserBox";
 import MovieList from "../../Components/MovieList/MovieList";
 import MovieDescription from "../../Components/MoveDescription/MovieDescription";
+import Header from "../../Components/Header/Header";
 import Axios from "axios";
 export default class Login extends Component {
 	constructor(props) {
@@ -36,13 +37,16 @@ export default class Login extends Component {
 
 	render() {
 		return (
-			<div className='dashboard'>
-				<UserBox
-					acctStart={this.state.acctStart}
-					acctEnd={this.state.acctEnd}
-				/>
-				<MovieList getID={this.getID} movies={this.state.movieList} />
-				<MovieDescription />
+			<div>
+				<Header />
+				<div className='dashboard'>
+					<UserBox
+						acctStart={this.state.acctStart}
+						acctEnd={this.state.acctEnd}
+					/>
+					<MovieList getID={this.getID} movies={this.state.movieList} />
+					<MovieDescription />
+				</div>
 			</div>
 		);
 	}

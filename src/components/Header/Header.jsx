@@ -1,4 +1,5 @@
-import React from "./node_modules/react";
+import React from "react";
+import { Route, Link } from "react-router-dom";
 import "./Header.style.scss";
 
 const Header = props => {
@@ -7,7 +8,9 @@ const Header = props => {
 			<div className='header-container'>
 				<div className='header-logo'></div>
 				<ul className='header-nav'>
-					<li className='header-li'>Login</li>
+					<Link to='/login' className='header-li'>
+						Login
+					</Link>
 				</ul>
 			</div>
 		</div>

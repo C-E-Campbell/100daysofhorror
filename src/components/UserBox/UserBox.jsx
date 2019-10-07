@@ -1,4 +1,4 @@
-import React, { Component } from "./node_modules/react";
+import React, { Component } from "react";
 import "./UserBox.style.scss";
 export default class UserBox extends Component {
 	render() {

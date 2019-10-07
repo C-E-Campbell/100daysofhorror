@@ -16,7 +16,6 @@ export default class MovieList extends Component {
 
 		return (
 			<div className='movie-list'>
-				<div className='header-logo'></div>
 				<h2 className='movie-list-title'>Movies To Watch</h2>
 				<input placeholder='Search Movies' />
 				{mappedMovies}

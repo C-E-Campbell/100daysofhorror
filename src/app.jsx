@@ -7,7 +7,7 @@ const App = () => {
 		<div>
 			<Switch>
 				<Route exact path='/' component={Landing} />
-				<Route path='/login' component={Login} />
+				<Route path='/' component={Login} />
 			</Switch>
 		</div>
 	);

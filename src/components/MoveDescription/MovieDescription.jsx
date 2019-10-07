@@ -1,6 +1,6 @@
-import React, { Component } from "./node_modules/react";
+import React, { Component } from "react";
 import "./MovieDescription.style.scss";
-import axios from "./node_modules/axios";
+import axios from "axios";
 export default class MovieDescription extends Component {
 	constructor() {
 		super();
