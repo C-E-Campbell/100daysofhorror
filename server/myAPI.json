@@ -27,7 +27,7 @@
 		"id": 4,
 		"title": "The Texas Chainsaw Massacre",
 		"runtime": 98,
-		"omdbID": "tt0324216",
+		"omdbID": "tt0072271",
 		"youtubeID": "T3TILW0O_C0",
 		"comment": ""
 	},
@@ -65,7 +65,7 @@
 	},
 	{
 		"id": 9,
-		"title": "The Silence Of The Lambs",
+		"title": "The Silence of the Lambs",
 		"runtime": 118,
 		"omdbID": "tt0102926",
 		"youtubeID": "W6Mm8Sbe__o",
@@ -77,6 +77,166 @@
 		"runtime": 111,
 		"omdbID": "tt0075005",
 		"youtubeID": "sS-sXcx30O4",
+		"comment": ""
+	},
+	{
+		"id": 11,
+		"title": "28 Days Later",
+		"runtime": 113,
+		"omdbID": "tt0289043",
+		"youtubeID": "c7ynwAgQlDQ",
+		"comment": ""
+	},
+	{
+		"id": 12,
+		"title": "The Conjuring",
+		"runtime": 146,
+		"omdbID": "tt1457767",
+		"youtubeID": "k10ETZ41q5o",
+		"comment": ""
+	},
+	{
+		"id": 13,
+		"title": "Hellraiser",
+		"runtime": 94,
+		"omdbID": "tt0093177",
+		"youtubeID": "8mOn4h0lgKQ",
+		"comment": ""
+	},
+	{
+		"id": 14,
+		"title": "Dawn of the Dead",
+		"runtime": 101,
+		"omdbID": "tt0363547",
+		"youtubeID": "--IIwV_Y6VU",
+		"comment": ""
+	},
+	{
+		"id": 15,
+		"title": "Candyman",
+		"runtime": 99,
+		"omdbID": "tt0103919",
+		"youtubeID": "AFjb447gMIM",
+		"comment": ""
+	},
+	{
+		"id": 16,
+		"title": "Insidious",
+		"runtime": 103,
+		"omdbID": "tt1591095",
+		"youtubeID": "zuZnRUcoWos",
+		"comment": ""
+	},
+	{
+		"id": 17,
+		"title": "A Nightmare on Elm Street",
+		"runtime": 91,
+		"omdbID": "tt0087800",
+		"youtubeID": "dCVh4lBfW-c",
+		"comment": ""
+	},
+	{
+		"id": 18,
+		"title": "Nosferatu",
+		"runtime": 81,
+		"omdbID": "tt0084516",
+		"youtubeID": "ZxlJxDr26mM",
+		"comment": ""
+	},
+	{
+		"id": 19,
+		"title": "The Thing",
+		"runtime": 109,
+		"omdbID": "tt0084787",
+		"youtubeID": "5ftmr17M-a4",
+		"comment": ""
+	},
+	{
+		"id": 20,
+		"title": "Suspiria",
+		"runtime": 92,
+		"omdbID": "tt0076786",
+		"youtubeID": "hPs2ExUL_bc",
+		"comment": ""
+	},
+	{
+		"id": 21,
+		"title": "Scream",
+		"runtime": 111,
+		"omdbID": "tt0117571",
+		"youtubeID": "AWm_mkbdpCA",
+		"comment": ""
+	},
+	{
+		"id": 22,
+		"title": "The Evil Dead",
+		"runtime": 85,
+		"omdbID": "tt0083907",
+		"youtubeID": "NL6mioAlpJk",
+		"comment": ""
+	},
+	{
+		"id": 23,
+		"title": "It ",
+		"runtime": 192,
+		"omdbID": "tt0099864",
+		"youtubeID": "m5JO8wtNnzQ",
+		"comment": ""
+	},
+	{
+		"id": 24,
+		"title": "The Blair Witch Project",
+		"runtime": 81,
+		"omdbID": "tt0185937",
+		"youtubeID": "a_Hw4bAUj8A",
+		"comment": ""
+	},
+	{
+		"id": 25,
+		"title": "The Cabinet of Dr. Caligari",
+		"runtime": 67,
+		"omdbID": "tt0084787",
+		"youtubeID": "rls_Pg5WPxs",
+		"comment": ""
+	},
+	{
+		"id": 26,
+		"title": "Friday the 13th",
+		"runtime": 95,
+		"omdbID": "tt0080761",
+		"youtubeID": "cCfO1aB8CIE",
+		"comment": ""
+	},
+	{
+		"id": 27,
+		"title": "The Ring",
+		"runtime": 81,
+		"omdbID": "tt0298130",
+		"youtubeID": "yzR2GY-ew8I",
+		"comment": ""
+	},
+	{
+		"id": 28,
+		"title": "Dracula",
+		"runtime": 75,
+		"omdbID": "tt0084787",
+		"youtubeID": "rls_Pg5WPxs",
+		"comment": ""
+	},
+	{
+		"id": 29,
+		"title": "Frankenstein",
+		"runtime": 70,
+		"omdbID": "tt0021884",
+		"youtubeID": "AkSbwiKP3mo",
+		"comment": ""
+	},
+	{
+		"id": 30,
+		"title": "The Wolf Man",
+		"runtime": 70,
+		"omdbID": "tt0034398",
+		"youtubeID": "j_k5TyfHMQw",
 		"comment": ""
 	}
 ]

@@ -1,5 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/App/App";
-import Login from "./Page/Login/Login";
-ReactDOM.render(<Login />, document.getElementById("root"));
+import { BrowserRouter } from "react-router-dom";
+import "./index.style.scss";
+import App from "./app";
+
+ReactDOM.render(
+	<BrowserRouter>
+		<App />
+	</BrowserRouter>,
+
+	document.getElementById("root")
+);

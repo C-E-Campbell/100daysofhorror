@@ -1,0 +1,31 @@
+.movie-description-box {
+	grid-row: 3/11;
+	grid-column: 2/6;
+	background-color: rgba(68, 68, 68, 0.288);
+	border-radius: 4px;
+	color: rgb(235, 235, 235);
+	border: 2px solid #333;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem 1rem;
+	text-shadow: 2px 2px 5px rgb(0, 0, 0);
+
+	img {
+		height: 200px;
+	}
+
+	p {
+		margin: 10px;
+	}
+}
+
+.trailer-link {
+	color: rgb(240, 95, 51);
+	text-decoration-line: underline;
+
+	&:hover {
+		color: rgb(243, 134, 97);
+	}
+}

@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import moment from "moment";
 import "./Login.style.scss";
 //import curatedMovies from "../../assetsAndApi/assets/myAPI.json";
-import UserBox from "./components/UserBox/UserBox";
-import MovieList from "./components/MovieList/MovieList";
-import MovieDescription from "./components/MoveDescription/MovieDescription";
+import UserBox from "../../Components/UserBox/UserBox";
+import MovieList from "../../Components/MovieList/MovieList";
+import MovieDescription from "../../Components/MoveDescription/MovieDescription";
 import Axios from "axios";
 export default class Login extends Component {
 	constructor(props) {
@@ -16,6 +16,7 @@ export default class Login extends Component {
 			movieList: [],
 			movieFlag: false
 		};
+		this.getID = this.getID.bind(this);
 	}
 
 	componentDidMount() {
@@ -29,24 +30,18 @@ export default class Login extends Component {
 		);
 	}
 
-	render() {
-		const mappedMovies = () => {
-			if (this.state.movieList.length === 0) {
-				return "";
-			} else {
-				return this.state.movieList.map(movie => {
-					return <a>{movie.title}</a>;
-				});
-			}
-		};
+	getID(id) {
+		console.log(id);
+	}
 
+	render() {
 		return (
 			<div className='dashboard'>
 				<UserBox
 					acctStart={this.state.acctStart}
 					acctEnd={this.state.acctEnd}
 				/>
-				<MovieList movies={mappedMovies()} />
+				<MovieList getID={this.getID} movies={this.state.movieList} />
 				<MovieDescription />
 			</div>
 		);

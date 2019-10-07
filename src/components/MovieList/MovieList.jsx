@@ -1,0 +1,26 @@
+import React, { Component } from "react";
+import "./MovieList.style.scss";
+import MovieItem from "../MovieItem/MovieItem";
+export default class MovieList extends Component {
+	render() {
+		const mappedMovies = this.props.movies.map(movie => {
+			return (
+				<MovieItem
+					key={movie.id}
+					id={movie.id}
+					title={movie.title}
+					onClick={() => this.props.getID}
+				></MovieItem>
+			);
+		});
+
+		return (
+			<div className='movie-list'>
+				<div className='header-logo'></div>
+				<h2 className='movie-list-title'>Movies To Watch</h2>
+				<input placeholder='Search Movies' />
+				{mappedMovies}
+			</div>
+		);
+	}
+}

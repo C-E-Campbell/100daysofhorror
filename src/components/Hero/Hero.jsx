@@ -1,6 +1,5 @@
-import React from "react";
+import React from "./node_modules/react";
 import Header from "../Header/Header";
-import { Link, animateScroll as scroll } from "react-scroll";
 import "./Hero.style.scss";
 
 const Hero = () => {
