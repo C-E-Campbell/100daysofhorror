@@ -9,6 +9,7 @@ export default class UserBox extends Component {
 					<div>
 						<h5>{`Challenge Started: ${this.props.acctStart}`}</h5>
 						<h5>{`Fate Determined: ${this.props.acctEnd}`}</h5>
+						<h5>{`Difficulty: ${this.props.difficulty}`}</h5>
 					</div>
 				</div>
 				<div className='user-box-percentage'>

@@ -1,9 +1,11 @@
 .header {
-	background: rgba(0, 0, 0, 0.479);
+	background: rgba(0, 0, 0, 0.993);
 	width: 100%;
 	color: rgb(223, 223, 223);
 	height: 50px;
 	font-family: "Merriweather", serif;
+	position: fixed;
+	z-index: 999;
 }
 
 .header-container {

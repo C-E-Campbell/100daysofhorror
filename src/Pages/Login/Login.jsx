@@ -15,7 +15,8 @@ export default class Login extends Component {
 			acctStart: null,
 			acctEnd: null,
 			movieList: [],
-			movieFlag: false
+			movieFlag: false,
+			difficulty: "Easy"
 		};
 		this.getID = this.getID.bind(this);
 	}
@@ -41,6 +42,7 @@ export default class Login extends Component {
 				<Header />
 				<div className='dashboard'>
 					<UserBox
+						difficulty={this.state.difficulty}
 						acctStart={this.state.acctStart}
 						acctEnd={this.state.acctEnd}
 					/>
