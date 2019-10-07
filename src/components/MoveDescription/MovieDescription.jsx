@@ -9,21 +9,16 @@ export default class MovieDescription extends Component {
 		super();
 		this.state = {
 			movie: {},
-			youtube: []
+			youtube: [],
+			videoID: "cCfO1aB8CIE"
 		};
 	}
 
 	//4c3ee338
 	componentDidMount() {
 		axios
-			.get("http://www.omdbapi.com/?apikey=4c3ee338&i=tt0075005&plot=full")
+			.get("http://www.omdbapi.com/?apikey=4c3ee338&i=tt0080761&plot=full")
 			.then(response => this.setState({ movie: response.data }));
-
-		axios
-			.get(
-				"https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyC-SL7LVSFJ19W8DuJzJKtwJWtvj_nxi7o'"
-			)
-			.then(response => console.log(response));
 	}
 
 	render() {
@@ -37,11 +32,13 @@ export default class MovieDescription extends Component {
 			Writer,
 			Title
 		} = this.state.movie;
+
+		let videoID = `https://www.youtube.com/embed/${this.state.videoID}`;
 		return (
 			<div className='movie-description-box'>
 				<h1>{Title}</h1>
 				<img src={Poster} alt='movie poster' />
-				<VideoModal />
+				<VideoModal src={videoID} />
 				<h3>{`Cast: ${Actors}`}</h3>
 				<p>{`Plot: ${Plot}`}</p>
 				<p>{`Director: ${Director}`}</p>
