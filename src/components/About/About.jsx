@@ -2,7 +2,7 @@ import React from "react";
 import "./About.style.scss";
 const About = () => {
 	return (
-		<div id='rules' className='about'>
+		<div id='toRules' className='about'>
 			<h2>Challenge Rules</h2>
 			<div className='about-container'>
 				<div className='about-item'>Two difficulties: Easy and MurderMe.</div>

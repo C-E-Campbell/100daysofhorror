@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import moment from "moment";
 import "./Login.style.scss";
-//import curatedMovies from "../../assetsAndApi/assets/myAPI.json";
+
 import UserBox from "../../Components/UserBox/UserBox";
 import MovieList from "../../Components/MovieList/MovieList";
 import DiffModal from "../../Components/DiffModal/DiffModal";

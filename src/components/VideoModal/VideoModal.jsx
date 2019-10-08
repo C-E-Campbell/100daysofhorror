@@ -9,7 +9,12 @@ const ModalBasicExample = props => (
 		size='small'
 	>
 		<Modal.Content src={props.src}>
-			<iframe height='600px' width='800px' src={props.src}></iframe>
+			<iframe
+				title='movie trailer'
+				height='600px;'
+				width='800px'
+				src={props.src}
+			></iframe>
 		</Modal.Content>
 	</Modal>
 );

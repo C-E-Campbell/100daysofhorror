@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./DiffModal.style.scss";
 import { Button, Header, Icon, Modal } from "semantic-ui-react";
 
 export default class ModalExampleControlled extends Component {
@@ -17,13 +18,12 @@ export default class ModalExampleControlled extends Component {
 				size='small'
 			>
 				<Modal.Content>
-					<h1>Choose a difficulty.</h1>
+					<h1>Choose A Difficulty.</h1>
 					<h3>Easy: You have 1 year to complete the challenge</h3>
 					<h3>MurderMe: Only 100 days...</h3>
 				</Modal.Content>
 				<Modal.Actions>
 					<Button
-						color='blue'
 						onClick={this.handleClose}
 						onClick={() => this.props.myModalFunc("Easy")}
 						inverted
@@ -31,7 +31,7 @@ export default class ModalExampleControlled extends Component {
 						Easy
 					</Button>
 					<Button
-						color='red'
+						id='murderme'
 						onClick={this.handleClose}
 						onClick={() => this.props.myModalFunc("MurderMe")}
 						inverted
