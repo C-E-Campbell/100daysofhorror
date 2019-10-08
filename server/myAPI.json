@@ -318,5 +318,125 @@
 		"omdbID": "tt1179904",
 		"youtubeID": "F_UxLEqd074",
 		"comment": ""
+	},
+	{
+		"id": 41,
+		"title": "The Omen (Original)",
+		"runtime": 111,
+		"omdbID": "tt0075005",
+		"youtubeID": "V7CEbd7ffNw",
+		"comment": ""
+	},
+	{
+		"id": 42,
+		"title": "The Innocents",
+		"runtime": 100,
+		"omdbID": "tt0055018",
+		"youtubeID": "aOsF0S65RR0",
+		"comment": ""
+	},
+	{
+		"id": 43,
+		"title": "Night of the Living Dead",
+		"runtime": 96,
+		"omdbID": "tt0063350",
+		"youtubeID": "ob8vZhSjES8",
+		"comment": ""
+	},
+	{
+		"id": 44,
+		"title": "Eyes Without a Face",
+		"runtime": 90,
+		"omdbID": "tt0053459",
+		"youtubeID": "CEjrg-L8lvs",
+		"comment": ""
+	},
+	{
+		"id": 45,
+		"title": "Saw",
+		"runtime": 103,
+		"omdbID": "tt0387564",
+		"youtubeID": "S-1QgOMQ-ls",
+		"comment": ""
+	},
+	{
+		"id": 46,
+		"title": "Carnival of Souls",
+		"runtime": 78,
+		"omdbID": "tt0055830",
+		"youtubeID": "q0w_4vaGqD8",
+		"comment": ""
+	},
+	{
+		"id": 47,
+		"title": "Jason Goes to Hell",
+		"runtime": 87,
+		"omdbID": "tt0107254",
+		"youtubeID": "PrIShIfjHeM",
+		"comment": ""
+	},
+	{
+		"id": 48,
+		"title": "Freddy vs. Jason",
+		"runtime": 97,
+		"omdbID": "tt0329101",
+		"youtubeID": "ipbCUW3umJU",
+		"comment": ""
+	},
+	{
+		"id": 49,
+		"title": "Halloween H20: 20 Years Later",
+		"runtime": 86,
+		"omdbID": "tt0120694",
+		"youtubeID": "WEEZCo8WS4k",
+		"comment": ""
+	},
+	{
+		"id": 50,
+		"title": "House of 1000 Corpses",
+		"runtime": 89,
+		"omdbID": "tt0251736",
+		"youtubeID": "fg1GiV7TXR4",
+		"comment": ""
+	},
+	{
+		"id": 51,
+		"title": "The Hills Have Eyes (Original)",
+		"runtime": 90,
+		"omdbID": "tt0077681",
+		"youtubeID": "EkdskdFemWM",
+		"comment": ""
+	},
+	{
+		"id": 52,
+		"title": "The Hills Have Eyes (2006)",
+		"runtime": 107,
+		"omdbID": "tt0454841",
+		"youtubeID": "CUQd9OB75dw",
+		"comment": ""
+	},
+	{
+		"id": 53,
+		"title": "Halloween III: Season of the Witch",
+		"runtime": 98,
+		"omdbID": "tt0085636",
+		"youtubeID": "9MnaYzBhx0A",
+		"comment": ""
+	},
+	{
+		"id": 54,
+		"title": "Child's Play",
+		"runtime": 87,
+		"omdbID": "tt0094862",
+		"youtubeID": "sjiyV8mtXiU",
+		"comment": ""
+	},
+	{
+		"id": 55,
+		"title": "Child's Play 2",
+		"runtime": 84,
+		"omdbID": "tt0099253",
+		"youtubeID": "QQ578YDz-sQ",
+		"comment": ""
 	}
 ]
