@@ -438,5 +438,77 @@
 		"omdbID": "tt0099253",
 		"youtubeID": "QQ578YDz-sQ",
 		"comment": ""
+	},
+	{
+		"id": 56,
+		"title": "Bride of Chucky",
+		"runtime": 89,
+		"omdbID": "tt0144120",
+		"youtubeID": "I-WZYQ6nABA",
+		"comment": ""
+	},
+	{
+		"id": 57,
+		"title": "IT (2017)",
+		"runtime": 135,
+		"omdbID": "tt1396484",
+		"youtubeID": "FnCdOQsX5kc",
+		"comment": ""
+	},
+	{
+		"id": 58,
+		"title": "It: Chapter Two",
+		"runtime": 169,
+		"omdbID": "tt7349950",
+		"youtubeID": "zqUopiAYdRg",
+		"comment": ""
+	},
+	{
+		"id": 57,
+		"title": "IT (2017)",
+		"runtime": 135,
+		"omdbID": "tt1396484",
+		"youtubeID": "FnCdOQsX5kc",
+		"comment": ""
+	},
+	{
+		"id": 58,
+		"title": "It: Chapter Two",
+		"runtime": 169,
+		"omdbID": "tt7349950",
+		"youtubeID": "zqUopiAYdRg",
+		"comment": ""
+	},
+	{
+		"id": 59,
+		"title": "13 Ghosts",
+		"runtime": 85,
+		"omdbID": "tt0053559",
+		"youtubeID": "Ocdb4qI2PqE",
+		"comment": ""
+	},
+	{
+		"id": 60,
+		"title": "Thir13en Ghosts",
+		"runtime": 91,
+		"omdbID": "tt0245674",
+		"youtubeID": "n1yZl9HVLd0",
+		"comment": ""
+	},
+	{
+		"id": 59,
+		"title": "The Exorcism of Emily Rose",
+		"runtime": 119,
+		"omdbID": "tt0404032",
+		"youtubeID": "lSy7DldFdUI",
+		"comment": ""
+	},
+	{
+		"id": 60,
+		"title": "Stigmata",
+		"runtime": 103,
+		"omdbID": "tt0145531",
+		"youtubeID": "rwsTYQ26QDQ",
+		"comment": ""
 	}
 ]
