@@ -6,7 +6,8 @@ const AskUs = () => {
 			<div className='ask-us-container'>
 				<div>
 					<h2 data-aos='fade-up'>
-						Would you like to see a movie added to the list? Send us a note!
+						Would you like to see a movie added to the list? <br />
+						Send us a note!
 					</h2>
 					<form>
 						<input type='text' placeholder='Add this movie!' />

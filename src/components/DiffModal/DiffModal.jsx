@@ -18,8 +18,8 @@ export default class ModalExampleControlled extends Component {
 			>
 				<Modal.Content>
 					<h1>Choose a difficulty.</h1>
-					<h3>Easy - You have 1 year to complete the challenge</h3>
-					<h3>MurderMe - Only 100 days...</h3>
+					<h3>Easy: You have 1 year to complete the challenge</h3>
+					<h3>MurderMe: Only 100 days...</h3>
 				</Modal.Content>
 				<Modal.Actions>
 					<Button
