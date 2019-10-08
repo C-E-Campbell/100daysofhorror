@@ -6,11 +6,14 @@ export default class UserBox extends Component {
 			<div className='user-box'>
 				<div className='user-box-data'>
 					<h1>Charles Campbell</h1>
-					{/* <div>
-						<h5>{`Challenge Started: ${this.props.acctStart}`}</h5>
+					<div>
+						{/* <h5>{`Challenge Started: ${this.props.acctStart}`}</h5>
 						<h5>{`Fate Determined: ${this.props.acctEnd}`}</h5>
-						<h5 className='orange'>{`Difficulty: ${this.props.difficulty}`}</h5>
-					</div> */}
+						<h5 className='orange'>{`Difficulty: ${this.props.difficulty}`}</h5> */}
+						<h5>Test Date Format</h5>
+						<h5>Test Date Format</h5>
+						<h5>Test Date Format</h5>
+					</div>
 				</div>
 				<div data-aos='fade-left' className='user-box-percentage'>
 					<p>Percentage Completed</p>
