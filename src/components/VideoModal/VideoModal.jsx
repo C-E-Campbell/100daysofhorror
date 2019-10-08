@@ -6,7 +6,7 @@ const ModalBasicExample = props => (
 		src={props.src}
 		trigger={<Button>Watch movie trailer here</Button>}
 		basic
-		size='medium'
+		size='small'
 	>
 		<Modal.Content src={props.src}>
 			<iframe height='600px' width='800px' src={props.src}></iframe>

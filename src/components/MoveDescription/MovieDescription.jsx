@@ -5,8 +5,8 @@ import axios from "axios";
 import VideoModal from "../VideoModal/VideoModal";
 
 export default class MovieDescription extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 		this.state = {
 			movie: {},
 			youtube: [],
@@ -17,8 +17,10 @@ export default class MovieDescription extends Component {
 	//4c3ee338
 	componentDidMount() {
 		axios
-			.get("http://www.omdbapi.com/?apikey=4c3ee338&i=tt0080761&plot=full")
-			.then(response => this.setState({ movie: response.data }));
+			.get(
+				`http://www.omdbapi.com/?apikey=4c3ee338&i=${this.props.movieID}&plot=full`
+			)
+			.then(response => this.setState({ videoID: response.data }));
 	}
 
 	render() {
@@ -33,10 +35,11 @@ export default class MovieDescription extends Component {
 			Title
 		} = this.state.movie;
 
-		let videoID = `https://www.youtube.com/embed/${this.state.videoID}`;
+		let videoID = `https://www.youtube.com/embed/${this.props.youtube}`;
+
 		return (
 			<div className='movie-description-box'>
-				<h1>{Title}</h1>
+				<h1>{this.state.movie.title}</h1>
 				<img src={Poster} alt='movie poster' />
 				<VideoModal src={videoID} />
 				<h3>{`Cast: ${Actors}`}</h3>

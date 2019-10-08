@@ -16,8 +16,10 @@ export default class Login extends Component {
 			acctStart: null,
 			acctEnd: null,
 			movieList: [],
+			movieItem: [],
 			movieFlag: false,
-			difficulty: "Easy"
+			difficulty: "Easy",
+			currentMovie: 22
 		};
 		this.getID = this.getID.bind(this);
 	}
@@ -28,16 +30,22 @@ export default class Login extends Component {
 			.add(1, "year")
 			.format("LL");
 		this.setState({ acctStart: getStart, acctEnd: getEnd });
-		Axios.get("http://localhost:8290/api/movies").then(response =>
-			this.setState({ movieList: response.data })
-		);
+		Axios.get("http://localhost:8290/api/movies").then(response => {
+			this.setState({ movieList: response.data });
+		});
+		Axios.get("http://localhost:8290/api/movies/12").then(response => {
+			this.setState({ movieItem: response.data });
+		});
 	}
 
 	getID(id) {
-		console.log(id);
+		Axios.get(
+			`http://localhost:8290/api/movies/${this.state.currentMovie}`
+		).then(response => console.log(response.data));
 	}
 
 	render() {
+		const { omdbID, youtubeID } = this.state.movieItem;
 		return (
 			<div>
 				<Header />
@@ -48,7 +56,7 @@ export default class Login extends Component {
 						acctEnd={this.state.acctEnd}
 					/>
 					<MovieList getID={this.getID} movies={this.state.movieList} />
-					<MovieDescription />
+					<MovieDescription movieID={"tt0034398"} youtube={youtubeID} />
 				</div>
 				<Footer />
 			</div>

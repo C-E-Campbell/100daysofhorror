@@ -9,8 +9,8 @@ export default class MovieList extends Component {
 					key={movie.id}
 					id={movie.id}
 					title={movie.title}
-					onClick={() => this.props.getID}
-				></MovieItem>
+					myFunc={() => this.props.getID(movie.id)}
+				/>
 			);
 		});
 
