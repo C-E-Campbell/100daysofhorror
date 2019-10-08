@@ -39,7 +39,7 @@ export default class Login extends Component {
 	}
 
 	async getID(movieData) {
-		const { id, omdbID, youtubeID } = movieData;
+		const { omdbID, youtubeID } = movieData;
 
 		const showMovie = await Axios.get(
 			`http://www.omdbapi.com/?apikey=4c3ee338&i=${omdbID}&plot=full`

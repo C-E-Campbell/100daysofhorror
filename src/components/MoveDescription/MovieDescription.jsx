@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./MovieDescription.style.scss";
-import axios from "axios";
 
 import VideoModal from "../VideoModal/VideoModal";
 

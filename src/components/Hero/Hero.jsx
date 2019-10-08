@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../Header/Header";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import "./Hero.style.scss";
 
 class Hero extends React.Component {

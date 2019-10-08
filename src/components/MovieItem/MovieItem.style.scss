@@ -10,10 +10,16 @@
 	justify-content: space-between;
 	align-items: center;
 }
-a {
+button {
+	padding: 0px;
+	margin: 0;
+	background: transparent;
+	outline: none;
+
 	&:hover {
 		cursor: pointer;
 		color: rgb(240, 95, 51);
+		background: transparent;
 	}
 }
 .movie-item:hover {
