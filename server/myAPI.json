@@ -238,5 +238,85 @@
 		"omdbID": "tt0034398",
 		"youtubeID": "j_k5TyfHMQw",
 		"comment": ""
+	},
+	{
+		"id": 31,
+		"title": "Annabelle Comes Home",
+		"runtime": 106,
+		"omdbID": "tt8350360",
+		"youtubeID": "bCxm7cTpBAs",
+		"comment": ""
+	},
+	{
+		"id": 32,
+		"title": "Us",
+		"runtime": 116,
+		"omdbID": "tt6857112",
+		"youtubeID": "1tzFRIQfwXg",
+		"comment": ""
+	},
+	{
+		"id": 33,
+		"title": "A Quiet Place",
+		"runtime": 90,
+		"omdbID": "tt6644200",
+		"youtubeID": "WR7cc5t7tv8",
+		"comment": ""
+	},
+	{
+		"id": 34,
+		"title": "Halloween (2018)",
+		"runtime": 106,
+		"omdbID": "tt1502407",
+		"youtubeID": "ek1ePFp-nBI",
+		"comment": ""
+	},
+	{
+		"id": 35,
+		"title": "The Nun",
+		"runtime": 96,
+		"omdbID": "tt5814060",
+		"youtubeID": "pzD9zGcUNrw",
+		"comment": ""
+	},
+	{
+		"id": 36,
+		"title": "Get Out",
+		"runtime": 104,
+		"omdbID": "tt5052448",
+		"youtubeID": "DzfpyUB60YY",
+		"comment": ""
+	},
+	{
+		"id": 37,
+		"title": "Halloween (2018)",
+		"runtime": 106,
+		"omdbID": "tt1502407",
+		"youtubeID": "ek1ePFp-nBI",
+		"comment": ""
+	},
+	{
+		"id": 38,
+		"title": "The Conjuring 2",
+		"runtime": 134,
+		"omdbID": "tt3065204",
+		"youtubeID": "KyA9AtUOqRM",
+		"comment": ""
+	},
+	{
+		"id": 39,
+		"title": "The Babadook",
+		"runtime": 94,
+		"omdbID": "tt2321549",
+		"youtubeID": "k5WQZzDRVtw",
+		"comment": ""
+	},
+	{
+		"id": 40,
+		"title": "Paranormal Activity",
+		"runtime": 86,
+		"omdbID": "tt1179904",
+		"youtubeID": "F_UxLEqd074",
+		"comment": ""
 	}
 ]

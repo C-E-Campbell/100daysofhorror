@@ -11,7 +11,7 @@ const About = () => {
 				</div>
 				<div className='about-item'>
 					If you can complete the challenge you will receive an SVG to display
-					anywhere. Post it as a badge of honor! I mean... a badge of gore.
+					anywhere. Post it as a badge of honor! Or... a badge of gore.
 				</div>
 				<div className='about-item'>
 					Note: For now, Completing this challenge is merely an integrity check.{" "}
