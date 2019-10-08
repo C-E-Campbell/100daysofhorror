@@ -6,10 +6,12 @@ export default class MovieList extends Component {
 		const mappedMovies = this.props.movies.map(movie => {
 			return (
 				<MovieItem
+					omdb={movie.omdbID}
+					youtube={movie.youtubeID}
 					key={movie.id}
 					id={movie.id}
 					title={movie.title}
-					myFunc={() => this.props.getID(movie.id)}
+					myFunc={() => this.props.getID(movie)}
 				/>
 			);
 		});

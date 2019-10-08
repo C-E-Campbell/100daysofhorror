@@ -19,8 +19,8 @@
 		margin-bottom: 20px;
 	}
 
-	p {
-		margin: 10px;
+	h3 {
+		text-align: center;
 	}
 }
 
@@ -31,4 +31,9 @@
 	&:hover {
 		color: rgb(243, 134, 97);
 	}
+}
+
+.plot {
+	height: 30%;
+	overflow-y: scroll;
 }

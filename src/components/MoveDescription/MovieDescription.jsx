@@ -8,46 +8,47 @@ export default class MovieDescription extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			movie: {},
-			youtube: [],
-			videoID: "cCfO1aB8CIE"
+			defaultMovie: {
+				Title: "The Exorcist",
+				Actors: "Ellen Burstyn, Max von Sydow, Lee J.Cobb, Kitty Winn",
+				Plot:
+					"A visiting actress in Washington, D.C., notices dramatic and dangerous changes in the behavior and physical make-up of her 12-year-old daughter. Meanwhile, a young priest at nearby Georgetown University begins to doubt his faith while dealing with his mother's terminal sickness. And, book-ending the story, a frail, elderly priest recognizes the necessity for a show-down with an old demonic enemy.",
+				Director: "William Friedkin",
+				Released: "26 Dec 1973",
+				Poster:
+					"https://m.media-amazon.com/images/M/MV5BYjhmMGMxZDYtMTkyNy00YWVmLTgyYmUtYTU3ZjcwNTBjN2I1XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+			}
 		};
 	}
 
 	//4c3ee338
-	componentDidMount() {
-		axios
-			.get(
-				`http://www.omdbapi.com/?apikey=4c3ee338&i=${this.props.movieID}&plot=full`
-			)
-			.then(response => this.setState({ videoID: response.data }));
-	}
 
 	render() {
+		let videoID = `https://www.youtube.com/embed/${this.props.trailer ||
+			"YDGw1MTEe9k"}`;
 		const {
-			Actors,
 			Poster,
-			Director,
+			Actors,
 			Plot,
-			Released,
-			Runtime,
-			Writer,
-			Title
-		} = this.state.movie;
-
-		let videoID = `https://www.youtube.com/embed/${this.props.youtube}`;
+			Director,
+			Title,
+			Released
+		} = this.props.movieData;
 
 		return (
 			<div className='movie-description-box'>
-				<h1>{this.state.movie.title}</h1>
-				<img src={Poster} alt='movie poster' />
+				<h1>{Title || this.state.defaultMovie.Title}</h1>
+				<img
+					src={Poster || this.state.defaultMovie.Poster}
+					alt='movie poster'
+				/>
 				<VideoModal src={videoID} />
-				<h3>{`Cast: ${Actors}`}</h3>
-				<p>{`Plot: ${Plot}`}</p>
-				<p>{`Director: ${Director}`}</p>
-				<p>{`Writer: ${Writer}`}</p>
-				<p>{`Released: ${Released}`}</p>
-				<p>{`Runtime: ${Runtime}`}</p>
+				<h3>{`Cast: ${Actors || this.state.defaultMovie.Actors}`}</h3>
+				<p className='plot'>{`Plot: ${Plot ||
+					this.state.defaultMovie.Plot}`}</p>
+				<p>{`Director: ${Director || this.state.defaultMovie.Director}`}</p>
+				<p className='released'>{`Released: ${Released ||
+					this.state.defaultMovie.Released}`}</p>
 			</div>
 		);
 	}

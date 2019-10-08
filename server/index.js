@@ -6,7 +6,7 @@ const cors = require("cors");
 
 app.get("/api/movies", cors(), m.get);
 
-app.get("/api/movies/:id", cors(), (req, res) => {
+app.get("/api/movie/:id", cors(), (req, res) => {
 	const { id } = req.params;
 	const index = data.findIndex(movie => {
 		return movie.id === parseInt(id);
