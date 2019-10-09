@@ -518,5 +518,85 @@
 		"omdbID": "tt0103873",
 		"youtubeID": "O8LIug1cP04",
 		"comment": ""
+	},
+	{
+		"id": 66,
+		"title": "The Human Centipede",
+		"runtime": 92,
+		"omdbID": "tt1467304",
+		"youtubeID": "IX8fKLjC__c",
+		"comment": ""
+	},
+	{
+		"id": 67,
+		"title": "Dead Snow",
+		"runtime": 91,
+		"omdbID": "tt1278340",
+		"youtubeID": "PrAHR1ykM6c",
+		"comment": ""
+	},
+	{
+		"id": 68,
+		"title": "Martyrs",
+		"runtime": 99,
+		"omdbID": "tt1029234",
+		"youtubeID": "5sXPBIA4zH4",
+		"comment": ""
+	},
+	{
+		"id": 69,
+		"title": "High Tension",
+		"runtime": 91,
+		"omdbID": "tt0338095",
+		"youtubeID": "cCP0nHopT7Y",
+		"comment": ""
+	},
+	{
+		"id": 70,
+		"title": "Hostel: Part II",
+		"runtime": 94,
+		"omdbID": "tt0498353",
+		"youtubeID": "7oG7ktw806Y",
+		"comment": ""
+	},
+	{
+		"id": 71,
+		"title": "The Devil's Rejects",
+		"runtime": 107,
+		"omdbID": "tt0395584",
+		"youtubeID": "3Jaa6ZuFyB8",
+		"comment": ""
+	},
+	{
+		"id": 72,
+		"title": "The House By The Cemetery",
+		"runtime": 86,
+		"omdbID": "tt0082966",
+		"youtubeID": "fZAMoslxS8U",
+		"comment": ""
+	},
+	{
+		"id": 73,
+		"title": "Saw III",
+		"runtime": 108,
+		"omdbID": "tt0489270",
+		"youtubeID": "zeJ9v8jjFEE",
+		"comment": ""
+	},
+	{
+		"id": 74,
+		"title": "A Nightmare on Elm Street 2: Freddy's Revenge",
+		"runtime": 87,
+		"omdbID": "tt0089686",
+		"youtubeID": "9iqNVyjwLFA",
+		"comment": ""
+	},
+	{
+		"id": 75,
+		"title": "Scream 2",
+		"runtime": 120,
+		"omdbID": "tt0120082",
+		"youtubeID": "1IpGyf-RCaQ",
+		"comment": ""
 	}
 ]
