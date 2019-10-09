@@ -10,6 +10,9 @@ const About = () => {
 					Depending on the difficulty, you will have a set timeline.
 				</div>
 				<div className='about-item'>
+					Watch all the movies on the list before challenge ends.
+				</div>
+				<div className='about-item'>
 					If you can complete the challenge you will receive an SVG to display
 					anywhere. Post it as a badge of honor! Or... a badge of gore.
 				</div>

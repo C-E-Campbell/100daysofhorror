@@ -12,6 +12,15 @@ const Header = props => {
 					<Link to='/login' className='header-li'>
 						Dashboard
 					</Link>
+					<a target='_blank' href='http://instagram.com' className='header-li'>
+						<i class='fab fa-instagram'></i>
+					</a>
+					<a target='_blank' href='http://facebook.com' className='header-li'>
+						<i class='fab fa-facebook-square'></i>
+					</a>
+					<a target='_blank' href='http://twitter.com' className='header-li'>
+						<i class='fab fa-twitter-square'></i>
+					</a>
 				</ul>
 			</div>
 		</div>

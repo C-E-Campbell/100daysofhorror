@@ -3,7 +3,8 @@
 	width: 100%;
 	color: rgb(223, 223, 223);
 	height: 50px;
-	font-family: "Merriweather", serif;
+	font-weight: 900;
+	font-size: 1.2rem;
 	position: fixed;
 	z-index: 999;
 }
@@ -20,13 +21,6 @@
 .header-logo {
 	background-image: url("../../Assets/assets/smallLogo.png.png");
 	background-size: cover;
-	font-size: 1.6rem;
-	width: 275px;
-	height: 90%;
-
-	&:hover {
-		color: #fff;
-	}
 }
 
 .header-nav {
@@ -34,11 +28,15 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	width: 15%;
+	width: 25%;
 }
-
+.header-li {
+	border-bottom: 2px solid transparent;
+	transition: all 0.3s ease-in;
+}
 .header-li:hover {
 	color: #fff;
+	border-bottom: 2px solid rgb(240, 95, 51);
 }
 
 @media (max-width: 500px) {

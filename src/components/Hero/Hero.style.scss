@@ -1,4 +1,7 @@
 .hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 96vh;
 	background-image: linear-gradient(
 			rgb(0, 0, 0) 1%,
@@ -8,40 +11,30 @@
 		url(../../Assets/assets/image1.jpg);
 	background-position: center;
 	background-size: cover;
+	background-attachment: fixed;
 	background-repeat: no-repeat;
 	color: #fff;
 	animation: fadePicture 17s infinite ease-in;
 }
 //font-family: 'Muli', sans-serif;
 .hero-text-container {
-	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	display: flex;
-	height: 50%;
 	max-width: 50%;
-	align-items: center;
-	justify-content: center;
+
 	font-size: 1.4rem;
 
 	h1 {
 		font-family: "Merriweather", serif;
-		font-size: 4rem;
+		font-size: 3.5rem;
+		font-weight: 900;
 		text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.644);
 	}
-
-	a {
-		font-size: 1rem;
-		border: 2px solid #fff;
-		padding: 4px 12px;
-		transition: all 0.3s;
-		text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-		&:hover {
-			background-color: #fff;
-			color: #333;
-			border-radius: 2px;
-		}
+	p {
+		margin-bottom: 2rem;
+		width: 90%;
+		padding: 5px;
+		font-weight: 900;
+		font-size: 1.4rem;
+		border-radius: 4px;
 	}
 }
 
@@ -49,6 +42,21 @@
 	color: rgb(240, 95, 51);
 	text-shadow: 1px 1px 3px #000;
 	font-family: "Merriweather", serif;
+}
+
+#bigBtn {
+	background-color: rgb(240, 95, 51);
+	font-size: 1.2rem;
+	color: #fff;
+	padding: 0.5rem 1.5rem;
+	border-radius: 30px;
+	width: 100%;
+	font-weight: 900;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.466);
+
+	&:hover {
+		background-color: darken($color: rgb(240, 95, 51), $amount: 10%);
+	}
 }
 
 @keyframes fadePicture {

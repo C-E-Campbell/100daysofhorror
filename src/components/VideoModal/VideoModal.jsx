@@ -11,8 +11,8 @@ const ModalBasicExample = props => (
 		<Modal.Content src={props.src}>
 			<iframe
 				title='movie trailer'
-				height='600px;'
-				width='800px'
+				height='300px;'
+				width='100%'
 				src={props.src}
 			></iframe>
 		</Modal.Content>
