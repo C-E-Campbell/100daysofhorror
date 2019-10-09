@@ -3,25 +3,28 @@
 	margin: 2px;
 	color: #fff;
 	width: 90%;
-	font-size: 0.7rem;
+	font-size: 0.9rem;
 	padding: 4px 5px;
 	border-radius: 4px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-button {
-	padding: 4px;
-	margin: 0;
-	background: transparent;
-	outline: none;
 
-	&:hover {
-		cursor: pointer;
-		color: rgb(240, 95, 51);
+	button {
+		padding: 4px;
+		margin: 0;
 		background: transparent;
+		outline: none;
+		color: #fff;
+		border: none;
+		&:hover {
+			cursor: pointer;
+			color: rgb(240, 95, 51);
+			background: transparent;
+		}
 	}
 }
+
 .movie-item:hover {
 	background-color: rgba(10, 10, 10, 0.651);
 }

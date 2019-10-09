@@ -2,14 +2,14 @@ const express = require("express");
 const m = require("./controller/movie_controller");
 const data = require("./myAPI.json");
 const app = express();
-const cors = require("cors");
+
 app.use(express.json());
 
-app.get("/api/movies", cors(), m.get);
+app.get("/api/movies", m.get);
 
-app.delete("/api/movie/:id", cors(), m.delete);
+app.delete("/api/movie/:id", m.delete);
 
-const port = 8290;
+const port = process.env.PORT || 8290;
 app.listen(port, () => {
-	console.log("server is running on port 8290");
+	console.log(`server listening on ${port}`);
 });

@@ -19,6 +19,7 @@ export default class MovieList extends Component {
 						id={movie.id}
 						title={movie.title}
 						myFunc={() => this.props.getID(movie)}
+						delFunc={() => this.props.deleteMovie(movie.id)}
 					/>
 				);
 			})

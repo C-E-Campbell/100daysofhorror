@@ -31,6 +31,7 @@ export default class ModalExampleControlled extends Component {
 						Easy
 					</Button>
 					<Button
+						color='red'
 						id='murderme'
 						onClick={this.handleClose}
 						onClick={() => this.props.myModalFunc("MurderMe")}

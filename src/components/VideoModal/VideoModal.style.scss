@@ -1,5 +1,12 @@
 #modalBtn {
 	padding: 4px 12px;
-	background-color: #201f1f;
+	background-color: #292828;
 	border-radius: 4px;
+	color: #fff;
+	border: none;
+
+	&:hover {
+		cursor: pointer;
+		color: rgb(240, 95, 51);
+	}
 }

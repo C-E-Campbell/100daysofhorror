@@ -2,7 +2,7 @@ import React from "react";
 import "./About.style.scss";
 const About = () => {
 	return (
-		<div id='toRules' className='about'>
+		<div id='toRules' className='about' data-aos='fade'>
 			<h2>Challenge Rules</h2>
 			<div className='about-container'>
 				<div className='about-item'>Two difficulties: Easy and MurderMe.</div>
@@ -14,7 +14,8 @@ const About = () => {
 					anywhere. Post it as a badge of honor! Or... a badge of gore.
 				</div>
 				<div className='about-item'>
-					Note: For now, Completing this challenge is merely an integrity check.{" "}
+					Note: For now, Completing this challenge is merely an integrity check.
+					<br />
 					<span className='red'>I can't stalk ALL of you.</span>
 				</div>
 			</div>

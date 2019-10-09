@@ -3,11 +3,12 @@ import moment from "moment";
 import "./Login.style.scss";
 import UserBox from "../../Components/UserBox/UserBox";
 import MovieList from "../../Components/MovieList/MovieList";
-//import DiffModal from "../../Components/DiffModal/DiffModal";
+import DiffModal from "../../Components/DiffModal/DiffModal";
 import MovieDescription from "../../Components/MoveDescription/MovieDescription";
 import Header from "../../Components/Header/Header";
+import YouWin from "../../Components/YouWin/YouWin";
 import Footer from "../../Components/Footer/Footer";
-import Axios from "axios";
+import axios from "axios";
 
 export default class Login extends Component {
 	constructor(props) {
@@ -20,34 +21,45 @@ export default class Login extends Component {
 			difficultyFlag: false,
 			difficulty: "",
 			currentMovie: {},
-			trailerID: ""
+			trailerID: "",
+			isEmpty: false
 		};
 
 		this.getID = this.getID.bind(this);
 		this.myModalFunc = this.myModalFunc.bind(this);
+		this.deleteMovie = this.deleteMovie.bind(this);
 	}
 
-	async componentDidMount() {
+	componentDidMount() {
 		let getStart = moment().format("LL");
 		this.setState({ acctStart: getStart });
 
-		const getMovies = await Axios.get("http://localhost:8290/api/movies").then(
-			response => {
-				this.setState({ movieList: response.data });
-			}
-		);
-	}
-
-	async getID(movieData) {
-		const { omdbID, youtubeID } = movieData;
-
-		const showMovie = await Axios.get(
-			`http://www.omdbapi.com/?apikey=4c3ee338&i=${omdbID}&plot=full`
-		).then(response => {
-			this.setState({ currentMovie: response.data, trailerID: youtubeID });
+		axios.get("/api/movies").then(response => {
+			this.setState({ movieList: response.data });
 		});
 	}
 
+	getID(movieData) {
+		const { omdbID, youtubeID } = movieData;
+
+		axios
+			.get(`http://www.omdbapi.com/?apikey=4c3ee338&i=${omdbID}&plot=full`)
+			.then(response => {
+				this.setState({ currentMovie: response.data, trailerID: youtubeID });
+			});
+	}
+
+	deleteMovie(id) {
+		if (this.state.movieList.length === 1) {
+			axios.delete(`/api/movie/${id}`).then(response => {
+				this.setState({ movieList: response.data, isEmpty: true });
+			});
+		} else {
+			axios.delete(`/api/movie/${id}`).then(response => {
+				this.setState({ movieList: response.data });
+			});
+		}
+	}
 	myModalFunc(diff) {
 		if (diff === "Easy") {
 			this.setState({
@@ -69,28 +81,35 @@ export default class Login extends Component {
 	}
 
 	render() {
-		// if (!this.state.difficultyFlag) {
-		// 	return <DiffModal myModalFunc={this.myModalFunc} />;
-		// } else {
-		return (
-			<div>
-				<Header />
-				<div className='dashboard'>
-					<UserBox
-						movieListLength={this.state.movieList.length}
-						difficulty={this.state.difficulty}
-						acctStart={this.state.acctStart}
-						acctEnd={this.state.acctEnd}
-					/>
-					<MovieList getID={this.getID} movies={this.state.movieList} />
-					<MovieDescription
-						trailer={this.state.trailerID}
-						movieData={this.state.currentMovie}
-					/>
-				</div>
-				<Footer />
-			</div>
-		);
+		if (!this.state.difficultyFlag) {
+			return <DiffModal myModalFunc={this.myModalFunc} />;
+		} else {
+			if (this.state.isEmpty) {
+				return <YouWin className={("youwin", "move")} />;
+			} else {
+				return (
+					<div>
+						<Header />
+						<div className='dashboard'>
+							<UserBox
+								movieListLength={this.state.movieList.length}
+								difficulty={this.state.difficulty}
+								acctStart={this.state.acctStart}
+								acctEnd={this.state.acctEnd}
+							/>
+							<MovieList
+								getID={this.getID}
+								movies={this.state.movieList}
+								deleteMovie={this.deleteMovie}
+							/>
+							<MovieDescription
+								trailer={this.state.trailerID}
+								movieData={this.state.currentMovie}
+							/>
+						</div>
+					</div>
+				);
+			}
+		}
 	}
-	// }
 }
