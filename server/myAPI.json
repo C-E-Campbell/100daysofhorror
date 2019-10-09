@@ -598,5 +598,205 @@
 		"omdbID": "tt0120082",
 		"youtubeID": "1IpGyf-RCaQ",
 		"comment": ""
+	},
+	{
+		"id": 76,
+		"title": "Tokyo Gore Police",
+		"runtime": 110,
+		"omdbID": "tt1183732",
+		"youtubeID": "1VqtYgQ0ZXo",
+		"comment": ""
+	},
+	{
+		"id": 77,
+		"title": "Halloween 4: The Return of Michael Myers",
+		"runtime": 88,
+		"omdbID": "tt0095271",
+		"youtubeID": "DDPjWtZ9IgU",
+		"comment": ""
+	},
+	{
+		"id": 78,
+		"title": "Halloween 5: The Revenge of Michael Myers",
+		"runtime": 96,
+		"omdbID": "tt0097474",
+		"youtubeID": "gvTjz_LXvPo",
+		"comment": ""
+	},
+	{
+		"id": 79,
+		"title": "The Grudge",
+		"runtime": 91,
+		"omdbID": "tt0391198",
+		"youtubeID": "YC3bzK_i9_s",
+		"comment": ""
+	},
+	{
+		"id": 80,
+		"title": "The Grudge 2",
+		"runtime": 102,
+		"omdbID": "tt0433386",
+		"youtubeID": "2fsOsguf0iA",
+		"comment": ""
+	},
+	{
+		"id": 81,
+		"title": "Rings",
+		"runtime": 102,
+		"omdbID": "tt0498381",
+		"youtubeID": "K2U-NWDLXM4",
+		"comment": ""
+	},
+	{
+		"id": 82,
+		"title": "The Vatican Tapes",
+		"runtime": 91,
+		"omdbID": "tt1524575",
+		"youtubeID": "2T53CcLdGIY",
+		"comment": ""
+	},
+	{
+		"id": 83,
+		"title": "The Devil Inside",
+		"runtime": 83,
+		"omdbID": "tt1560985",
+		"youtubeID": "MVpcszlYT7s",
+		"comment": ""
+	},
+	{
+		"id": 84,
+		"title": "The Amityville Horror",
+		"runtime": 90,
+		"omdbID": "tt0384806",
+		"youtubeID": "c5Maq9H1lZ8",
+		"comment": ""
+	},
+	{
+		"id": 85,
+		"title": "The Haunting in Connecticut",
+		"runtime": 92,
+		"omdbID": "tt0492044",
+		"youtubeID": "MRJA3lN0xCQ",
+		"comment": ""
+	},
+	{
+		"id": 86,
+		"title": "The Possession",
+		"runtime": 90,
+		"omdbID": "tt0384806",
+		"youtubeID": "WVjggWQRlQQ",
+		"comment": ""
+	},
+	{
+		"id": 87,
+		"title": "The Lords of Salem",
+		"runtime": 101,
+		"omdbID": "tt1731697",
+		"youtubeID": "xbcSupkCyOk",
+		"comment": ""
+	},
+	{
+		"id": 88,
+		"title": "Quarantine",
+		"runtime": 92,
+		"omdbID": "tt1082868",
+		"youtubeID": "iYCwlnZ0HVI",
+		"comment": ""
+	},
+	{
+		"id": 89,
+		"title": "Slither",
+		"runtime": 95,
+		"omdbID": "tt0439815",
+		"youtubeID": "SI0BcgVdSWg",
+		"comment": ""
+	},
+	{
+		"id": 90,
+		"title": "Phantasm",
+		"runtime": 88,
+		"omdbID": "tt0079714",
+		"youtubeID": "l58PJrWWGxg",
+		"comment": ""
+	},
+	{
+		"id": 91,
+		"title": "House on Haunted Hill",
+		"runtime": 93,
+		"omdbID": "tt0185371",
+		"youtubeID": "V-HA1Y5m2pY",
+		"comment": ""
+	},
+	{
+		"id": 92,
+		"title": "Oculus",
+		"runtime": 104,
+		"omdbID": "tt2388715",
+		"youtubeID": "WkntEHlnMVA",
+		"comment": ""
+	},
+	{
+		"id": 93,
+		"title": "May",
+		"runtime": 93,
+		"omdbID": "tt0303361",
+		"youtubeID": "6OkP7JcUYVE",
+		"comment": ""
+	},
+	{
+		"id": 94,
+		"title": "The Loved Ones",
+		"runtime": 84,
+		"omdbID": "tt1316536",
+		"youtubeID": "Cb5BFm4qIow",
+		"comment": ""
+	},
+	{
+		"id": 95,
+		"title": "The Brood",
+		"runtime": 92,
+		"omdbID": "tt0078908",
+		"youtubeID": "tI32rz-Xh7U",
+		"comment": ""
+	},
+	{
+		"id": 96,
+		"title": "Trick 'r Treat",
+		"runtime": 82,
+		"omdbID": "tt0862856",
+		"youtubeID": "AoBx7F-q2CA",
+		"comment": ""
+	},
+	{
+		"id": 97,
+		"title": "REC",
+		"runtime": 78,
+		"omdbID": "tt1038988",
+		"youtubeID": "KLizS5GFBQI",
+		"comment": ""
+	},
+	{
+		"id": 98,
+		"title": "Drag Me to Hell",
+		"runtime": 99,
+		"omdbID": "tt1127180",
+		"youtubeID": "PPOaxHqoYxo",
+		"comment": ""
+	},
+	{
+		"id": 99,
+		"title": "The Phantom of the Opera",
+		"runtime": 143,
+		"omdbID": "tt0293508",
+		"youtubeID": "HYvbaILyc2s",
+		"comment": ""
+	},
+	{
+		"id": 100,
+		"title": "Jaws",
+		"runtime": 124,
+		"omdbID": "tt0073195",
+		"youtubeID": "4pxkU9GVAoA",
+		"comment": ""
 	}
 ]
