@@ -1,4 +1,4 @@
-const data = require("../myAPI.json");
+const data = require("../movieAPI.json");
 
 module.exports = {
 	get: (req, res) => {

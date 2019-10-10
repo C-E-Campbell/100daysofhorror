@@ -35,7 +35,7 @@ export default class MovieDescription extends Component {
 		} = this.props.movieData;
 
 		return (
-			<div className='movie-description-box'>
+			<section className='movie-description-box'>
 				<h1>{Title || this.state.defaultMovie.Title}</h1>
 				<img
 					src={Poster || this.state.defaultMovie.Poster}
@@ -45,10 +45,12 @@ export default class MovieDescription extends Component {
 				<h3>{`Cast: ${Actors || this.state.defaultMovie.Actors}`}</h3>
 				<p className='plot'>{`Plot: ${Plot ||
 					this.state.defaultMovie.Plot}`}</p>
-				<p>{`Director: ${Director || this.state.defaultMovie.Director}`}</p>
-				<p className='released'>{`Released: ${Released ||
-					this.state.defaultMovie.Released}`}</p>
-			</div>
+				<div>
+					<p>{`Director: ${Director || this.state.defaultMovie.Director}`}</p>
+					<p className='released'>{`Released: ${Released ||
+						this.state.defaultMovie.Released}`}</p>
+				</div>
+			</section>
 		);
 	}
 }

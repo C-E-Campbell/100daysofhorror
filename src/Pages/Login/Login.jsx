@@ -107,6 +107,8 @@ export default class Login extends Component {
 							movieData={this.state.currentMovie}
 						/>
 					</div>
+
+					<Footer />
 				</div>
 			);
 		}

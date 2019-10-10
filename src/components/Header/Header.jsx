@@ -12,13 +12,20 @@ const Header = props => {
 					<Link to='/login' className='header-li'>
 						Dashboard
 					</Link>
+					<Link to='/journal' className='header-li'>
+						Journal
+					</Link>
 					<a target='_blank' href='http://instagram.com' className='header-li'>
 						<i className='fab fa-instagram'></i>
 					</a>
 					<a target='_blank' href='http://facebook.com' className='header-li'>
 						<i className='fab fa-facebook-square'></i>
 					</a>
-					<a target='_blank' href='http://twitter.com' className='header-li'>
+					<a
+						target='_blank'
+						href='https://twitter.com/DaysHorror'
+						className='header-li'
+					>
 						<i className='fab fa-twitter-square'></i>
 					</a>
 				</ul>
