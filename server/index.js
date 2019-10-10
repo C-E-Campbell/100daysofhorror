@@ -15,9 +15,9 @@ app.get("/api/journal_entries", j.get);
 
 app.post("/api/journal_entries/", j.post);
 
-// app.put("/api/journal/:id", j.put);
+app.put("/api/journal_entries/:id", j.put);
 
-app.delete("/api/journal/:id", j.delete);
+app.delete("/api/journal_entries/:id", j.delete);
 
 const port = process.env.PORT || 8293;
 app.listen(port, () => {
