@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./MovieList.style.scss";
 import MovieItem from "../MovieItem/MovieItem";
+
 export default class MovieList extends Component {
 	constructor(props) {
 		super(props);
@@ -8,6 +9,7 @@ export default class MovieList extends Component {
 			searchTerm: ""
 		};
 	}
+
 	render() {
 		const mappedMovies = this.props.movies
 			.map(movie => {
@@ -37,6 +39,7 @@ export default class MovieList extends Component {
 					placeholder='Search Movies'
 					onChange={e => this.setState({ searchTerm: e.target.value })}
 				/>
+				{/* mappedMata is a list of MovieItem Components sourced from movieAPI.json */}
 				{mappedMovies}
 			</div>
 		);

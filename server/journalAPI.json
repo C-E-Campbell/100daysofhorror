@@ -1,17 +1,12 @@
 [
 	{
 		"id": 1,
-		"title": "What is the best movie you've seen so far?",
-		"answer": "Example: Zombie Teletubbies go to Vegas"
+		"title": "Example: Child's Play",
+		"answer": "Example: I'd kick chucky across the room, fam."
 	},
 	{
 		"id": 2,
-		"title": "What is the worst movie you've seen so far?",
-		"answer": "Example: Jason takes swimming lessons"
-	},
-	{
-		"id": 3,
-		"title": "Or leave opinions on movies",
-		"answer": "I would punt chucky across the room, fam."
+		"title": "Example: Friday the 13th",
+		"answer": "Example: Id just get a canoe, jason probably doesnt like water"
 	}
 ]
