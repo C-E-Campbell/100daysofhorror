@@ -40,6 +40,7 @@
 		font-weight: 300;
 		font-size: 1.1rem;
 		border-radius: 4px;
+		line-height: 30px;
 	}
 }
 
@@ -59,7 +60,7 @@
 	font-weight: 900;
 	font-family: muli;
 	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.466);
-	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.418);
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.637);
 
 	&:hover {
 		background-color: darken($color: rgb(255, 138, 4), $amount: 5%);
