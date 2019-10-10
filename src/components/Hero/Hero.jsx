@@ -27,11 +27,11 @@ class Hero extends React.Component {
 				<Header />
 				<div
 					className='hero'
-					style={{ backgroundPositionY: this.state.offset / 12 }}
+					style={{ backgroundPositionY: this.state.offset / 13 }}
 				>
 					<div
 						style={{
-							top: this.state.offset / 4
+							top: this.state.offset / 3.5
 						}}
 						className='hero-text-container'
 					>

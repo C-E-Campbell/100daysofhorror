@@ -45,7 +45,7 @@ class About extends React.Component {
 						check.
 					</div>
 					<div className='about-item' className='red'>
-						I can't stalk ALL of you.
+						I can't stalk ALL of you...
 					</div>
 				</div>
 			</div>

@@ -1,7 +1,7 @@
 .movie-description-box {
 	grid-row: 3/11;
 	grid-column: 2/6;
-	background: linear-gradient(rgba(20, 20, 20, 0.897), rgba(17, 17, 17, 0.896)),
+	background: linear-gradient(rgba(0, 0, 0, 0.977), rgba(17, 17, 17, 0.976)),
 		url(../../Assets/assets/userbg.jpg);
 	background-size: cover;
 	border-radius: 4px;
@@ -25,11 +25,11 @@
 }
 
 .trailer-link {
-	color: rgb(240, 95, 51);
+	color: rgb(255, 138, 4);
 	text-decoration-line: underline;
 
 	&:hover {
-		color: rgb(243, 134, 97);
+		color: rgb(255, 156, 42);
 	}
 }
 
