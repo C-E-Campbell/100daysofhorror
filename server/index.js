@@ -13,9 +13,9 @@ app.delete("/api/movie/:id", m.delete);
 // journal methods
 app.get("/api/journal_entries", j.get);
 
-app.post("/apijournal/:id", j.post);
+app.post("/api/journal_entries/", j.post);
 
-app.put("/api/journal/:id", j.put);
+// app.put("/api/journal/:id", j.put);
 
 app.delete("/api/journal/:id", j.delete);
 

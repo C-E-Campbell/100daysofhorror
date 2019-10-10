@@ -1,15 +1,16 @@
 .ask-us {
+	position: relative;
 	background: linear-gradient(
 			#000,
 			rgba(0, 0, 0, 0.952) 30%,
 			rgba(0, 0, 0, 0.884) 40%,
-			rgba(0, 0, 0, 0.377) 65%,
+			rgba(0, 0, 0, 0.5) 65%,
 			#000
 		),
 		url(../../Assets/assets/askbg.jpg);
 	background-position: top center;
 	background-size: cover;
-	height: 60vh;
+	height: 100vh;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -61,4 +62,11 @@ form {
 			border: 1px solid #fff;
 		}
 	}
+}
+#pulse2 {
+	position: absolute;
+	bottom: 6px;
+	margin: 0 auto;
+	animation: pulse 1 ease-in infinite both running;
+	color: rgb(255, 138, 4);
 }

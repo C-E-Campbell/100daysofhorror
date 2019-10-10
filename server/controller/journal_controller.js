@@ -15,5 +15,11 @@ module.exports = {
 			res.status(200).send(jData);
 		}
 	},
-	post: (req, res) => {}
+	post: (req, res) => {
+		const { title, answer } = req.body;
+		jData.push({ index, title, answer });
+		index++;
+		res.status(200).send(jData);
+	},
+	put: (req, res) => {}
 };

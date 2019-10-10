@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.style.scss";
+import { Link } from "react-scroll";
 class About extends React.Component {
 	constructor(props) {
 		super(props);
@@ -48,6 +49,9 @@ class About extends React.Component {
 						I can't stalk ALL of you...
 					</div>
 				</div>
+				<Link id='pulse' duration={600} smooth={true} to='askus'>
+					<i id='pulse' class='fas fa-arrow-alt-circle-down fa-2x'></i>
+				</Link>
 			</div>
 		);
 	}

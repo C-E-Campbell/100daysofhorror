@@ -5,7 +5,7 @@ import "./Header.style.scss";
 
 const Header = props => {
 	return (
-		<div className='header'>
+		<div className='header' id='header'>
 			<div className='header-container'>
 				<Link to='/' className='header-logo'></Link>
 				<ul className='header-nav'>
