@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
+import CommentEditModal from "../../Components/CommentEditModal/CommentEditModal";
 import axios from "axios";
 import "./Journal.style.scss";
 import JournalEntry from "../../Components/JournalEntry/JournalEntry";
@@ -15,6 +16,7 @@ export default class Journal extends Component {
 		};
 		this.deleteComment = this.deleteComment.bind(this);
 		this.getEditInfo = this.getEditInfo.bind(this);
+		this.addNewInfo = this.addNewInfo.bind(this);
 	}
 
 	componentDidMount() {
@@ -61,6 +63,30 @@ export default class Journal extends Component {
 			);
 	}
 
+	pushNewComment() {
+		axios
+			.put(`/api/journal_entries/${this.state.entryData.id}`, {
+				title: this.state.entryData.title,
+				answer: this.state.entryData.answer,
+				id: this.state.entryData.id
+			})
+			.then(response =>
+				this.setState({ journalData: response.data, entryFlag: false })
+			);
+	}
+
+	addNewInfo(newTitle, newAnswer) {
+		let { title, answer, id } = this.state.entryData;
+		title = newTitle;
+		answer = newAnswer;
+
+		this.setState({ entryFlag: false, entryData: { title, answer, id } });
+
+		setTimeout(() => {
+			this.pushNewComment();
+		}, 100);
+	}
+
 	render() {
 		const mappedData = this.state.journalData.map(entry => {
 			return (
@@ -75,21 +101,25 @@ export default class Journal extends Component {
 			);
 		});
 
-		return (
-			<div>
-				<Header />
-				<section className='journal'>
-					<h2>Spill Your Guts</h2>
-					<h4>Leave comments and opinions on the movies you watch!</h4>
-					<p></p>
-					<section className='journal-container'>
-						{/* MappedData is a list of JournalEntry Components sourced from journalAPI.json */}
-						<div>{mappedData}</div>
-					</section>
-				</section>
+		if (this.state.entryFlag === true) {
+			return <CommentEditModal returnInfo={this.addNewInfo} />;
+		} else {
+			return (
+				<div>
+					<Header />
 
-				<Footer />
-			</div>
-		);
+					<section className='journal'>
+						<h2>Spill Your Guts</h2>
+						<h4>Leave comments and opinions on the movies you watch!</h4>
+						<p></p>
+						<section className='journal-container'>
+							{/* MappedData is a list of JournalEntry Components sourced from journalAPI.json */}
+							<div>{mappedData}</div>
+						</section>
+					</section>
+					<Footer />
+				</div>
+			);
+		}
 	}
 }

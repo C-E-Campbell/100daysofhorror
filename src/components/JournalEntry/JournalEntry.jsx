@@ -10,7 +10,12 @@ const JournalEntry = props => {
 				<p>{props.answer}</p>
 			</div>
 			<div className='icon-box'>
-				<i className='far fa-edit' onClick={props.getInfo(props.id)}></i>
+				<i
+					className='far fa-edit'
+					onClick={() => {
+						props.getInfo(props.id);
+					}}
+				></i>
 				<i
 					onClick={() => {
 						props.deleteFunc(props.id);

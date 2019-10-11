@@ -50,7 +50,7 @@ class About extends React.Component {
 					</div>
 				</div>
 				<Link id='pulse' duration={600} smooth={true} to='askus'>
-					<i id='pulse' class='fas fa-arrow-alt-circle-down fa-2x'></i>
+					<i id='pulse' className='fas fa-arrow-alt-circle-down fa-2x'></i>
 				</Link>
 			</div>
 		);
