@@ -45,9 +45,7 @@ class About extends React.Component {
 						Note: For now, Completing this challenge is merely an integrity
 						check.
 					</div>
-					<div className='about-item' className='red'>
-						I can't stalk ALL of you...
-					</div>
+					<div className='about-item red'>I can't stalk ALL of you...</div>
 				</div>
 				<Link id='pulse' duration={600} smooth={true} to='askus'>
 					<i id='pulse' className='fas fa-arrow-alt-circle-down fa-2x'></i>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Modal } from "semantic-ui-react";
+import { Modal } from "semantic-ui-react";
 import "./VideoModal.style.scss";
 const ModalBasicExample = props => (
 	<Modal

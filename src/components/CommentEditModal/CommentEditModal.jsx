@@ -13,7 +13,7 @@ class ModalModalExample extends React.Component {
 	handleClose = () => this.setState({ modalOpen: false });
 
 	render() {
-		const { open, closeOnEscape, closeOnDimmerClick } = this.state;
+		const { closeOnDimmerClick } = this.state;
 		return (
 			<Modal
 				open={this.state.modalOpen}
@@ -23,7 +23,7 @@ class ModalModalExample extends React.Component {
 				closeOnDimmerClick={closeOnDimmerClick}
 				onClose={this.close}
 			>
-				<Modal.Header>Edit Movie Comment</Modal.Header>
+				<Modal.Header>{this.props.headline}</Modal.Header>
 				<Modal.Content>
 					<form
 						onSubmit={e => {
@@ -53,10 +53,12 @@ class ModalModalExample extends React.Component {
 						<Button
 							style={{ margin: "0 auto" }}
 							color='black'
-							onClick={this.handleClose}
-							onClick={e => {
-								this.props.returnInfo(this.state.title, this.state.answer);
-							}}
+							onClick={
+								(this.handleClose,
+								e => {
+									this.props.returnInfo(this.state.title, this.state.answer);
+								})
+							}
 						>
 							Finished
 						</Button>

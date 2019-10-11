@@ -12,12 +12,14 @@ export default class Journal extends Component {
 		this.state = {
 			journalData: [],
 			entryData: [],
-			entryFlag: false
+			entryFlag: false,
+			createNewCommentFlag: false
 		};
 		this.deleteComment = this.deleteComment.bind(this);
 		this.getEditInfo = this.getEditInfo.bind(this);
 		this.addNewInfo = this.addNewInfo.bind(this);
-		this.createNewComment = this.createNewComment.bind(this);
+		this.startNewComment = this.startNewComment.bind(this);
+		this.getNewCommentInfo = this.getNewCommentInfo.bind(this);
 	}
 
 	componentDidMount() {
@@ -63,19 +65,9 @@ export default class Journal extends Component {
 				)
 			);
 	}
-
-	pushNewComment() {
-		axios
-			.put(`/api/journal_entries/${this.state.entryData.id}`, {
-				title: this.state.entryData.title,
-				answer: this.state.entryData.answer,
-				id: this.state.entryData.id
-			})
-			.then(response =>
-				this.setState({ journalData: response.data, entryFlag: false })
-			);
-	}
-
+	//UPDATING A COMMENT
+	// STEP ONE: grabs the info from popup modal and puts it in state.
+	// if we dont setTimeout, the data isnt there to push to json - too fast
 	addNewInfo(newTitle, newAnswer) {
 		let { title, answer, id } = this.state.entryData;
 		title = newTitle;
@@ -88,7 +80,30 @@ export default class Journal extends Component {
 		}, 100);
 	}
 
-	createNewComment() {}
+	// STEP TWO: push the data from state to the edited json
+	pushNewComment() {
+		axios
+			.put(`/api/journal_entries/${this.state.entryData.id}`, {
+				title: this.state.entryData.title,
+				answer: this.state.entryData.answer,
+				id: this.state.entryData.id
+			})
+			.then(response =>
+				this.setState({ journalData: response.data, entryFlag: false })
+			);
+	}
+
+	// CREATING A COMMENT
+	// STEP ONE: set flag to true so popup modal shows
+	startNewComment() {
+		this.setState({ createNewComment: true });
+	}
+	// STEP TWO:
+	getNewCommentInfo(newTitle, newAnswer) {
+		axios
+			.get("/api/journal_entries/", { title: newTitle, answer: newAnswer })
+			.then(response => this.setState({ journalData: response.data }));
+	}
 
 	render() {
 		const mappedData = this.state.journalData.map(entry => {
@@ -107,9 +122,19 @@ export default class Journal extends Component {
 		if (this.state.entryFlag === true) {
 			return (
 				<CommentEditModal
+					headline='Edit Comment'
 					returnInfo={this.addNewInfo}
 					title={this.state.entryData.title}
 					answer={this.state.entryData.answer}
+				/>
+			);
+		} else if (this.state.createNewCommentFlag === true) {
+			return (
+				<CommentEditModal
+					returnInfo={this.getNewCommentInfo}
+					headline='Create New Comment'
+					title='Enter movie name'
+					answer='Leave comment or review'
 				/>
 			);
 		} else {
@@ -122,8 +147,19 @@ export default class Journal extends Component {
 						<p></p>
 						<section className='journal-container'>
 							<div className='create'>
-								<button>Create New</button>
-								<i className='fas fa-plus'></i>
+								<button
+									onClick={() => {
+										this.startNewComment();
+									}}
+								>
+									Create New
+								</button>
+								<i
+									onClick={() => {
+										this.startNewComment();
+									}}
+									className='fas fa-plus'
+								></i>
 							</div>
 
 							{/* MappedData is a list of JournalEntry Components sourced from journalAPI.json */}
