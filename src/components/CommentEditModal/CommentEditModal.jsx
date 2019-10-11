@@ -31,22 +31,27 @@ class ModalModalExample extends React.Component {
 						}}
 					>
 						<input
-							id='input-color'
+							style={{ color: "#222", border: "2px solid rgb(199, 194, 194)" }}
 							onChange={e => {
 								this.setState({ title: e.target.value });
 							}}
 							type='text'
 							placeholder='Enter movie name'
 						/>
-						<textarea
+
+						<input
+							style={{
+								color: "#222",
+								border: "2px solid rgb(199, 194, 194)",
+								display: "block"
+							}}
 							onChange={e => {
 								this.setState({ answer: e.target.value });
 							}}
-							cols='30'
-							rows='10'
 							placeholder='Leave comment or review'
-						></textarea>
+						></input>
 						<Button
+							style={{ margin: "0 auto" }}
 							color='black'
 							onClick={this.handleClose}
 							onClick={e => {
