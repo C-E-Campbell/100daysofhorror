@@ -39,7 +39,8 @@ class About extends React.Component {
 					</div>
 					<div className='about-item'>
 						If you can complete the challenge you will receive an SVG to display
-						anywhere. Post it as a badge of honor! Or... a badge of gore.
+						anywhere.
+						<br /> Post it as a badge of honor! Or... a badge of gore.
 					</div>
 					<div className='about-item'>
 						Note: For now, Completing this challenge is merely an integrity

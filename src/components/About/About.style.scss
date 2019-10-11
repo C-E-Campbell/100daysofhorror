@@ -12,20 +12,16 @@
 	justify-content: center;
 	align-items: center;
 	padding-bottom: 6rem;
-	background: linear-gradient(rgba(0, 0, 0, 0.918), rgba(0, 0, 0, 0.925)),
-		url("../../Assets/assets/image3.jpg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
 }
 h2 {
 	color: #fff;
-	font-family: "Merriweather", serif;
-	font-weight: 300;
-	font-size: 2.5rem;
+	font-family: muli;
+	font-weight: 900;
+	font-size: 4rem;
 	margin-bottom: 2rem;
 }
 .about-container {
+	font-family: muli;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
@@ -39,6 +35,7 @@ h2 {
 .about-item {
 	margin: 1rem;
 	font-size: 1.3rem;
+	line-height: 1.5rem;
 }
 
 #pulse {
