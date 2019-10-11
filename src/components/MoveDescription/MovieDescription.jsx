@@ -45,7 +45,7 @@ export default class MovieDescription extends Component {
 				<h3>{`Cast: ${Actors || this.state.defaultMovie.Actors}`}</h3>
 				<p className='plot'>{`Plot: ${Plot ||
 					this.state.defaultMovie.Plot}`}</p>
-				<div>
+				<div className='movie-info'>
 					<p>{`Director: ${Director || this.state.defaultMovie.Director}`}</p>
 					<p className='released'>{`Released: ${Released ||
 						this.state.defaultMovie.Released}`}</p>
