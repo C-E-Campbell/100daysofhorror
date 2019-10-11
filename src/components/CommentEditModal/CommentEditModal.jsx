@@ -17,11 +17,10 @@ class ModalModalExample extends React.Component {
 		return (
 			<Modal
 				open={this.state.modalOpen}
-				onClose={this.handleClose}
+				onClose={(this.handleClose, this.close)}
 				//basic
 				size='tiny'
 				closeOnDimmerClick={closeOnDimmerClick}
-				onClose={this.close}
 			>
 				<Modal.Header>{this.props.headline}</Modal.Header>
 				<Modal.Content>
@@ -55,7 +54,7 @@ class ModalModalExample extends React.Component {
 							color='black'
 							onClick={
 								(this.handleClose,
-								e => {
+								() => {
 									this.props.returnInfo(this.state.title, this.state.answer);
 								})
 							}

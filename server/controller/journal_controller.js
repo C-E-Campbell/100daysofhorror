@@ -33,7 +33,7 @@ module.exports = {
 	},
 	post: (req, res) => {
 		const { title, answer } = req.body;
-		jData.push({ index, title, answer });
+		jData.push({ id: index, title, answer });
 		index++;
 		res.status(200).send(jData);
 	},

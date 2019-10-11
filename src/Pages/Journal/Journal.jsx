@@ -96,13 +96,19 @@ export default class Journal extends Component {
 	// CREATING A COMMENT
 	// STEP ONE: set flag to true so popup modal shows
 	startNewComment() {
-		this.setState({ createNewComment: true });
+		this.setState({ createNewCommentFlag: true });
 	}
 	// STEP TWO:
 	getNewCommentInfo(newTitle, newAnswer) {
+		console.log(newTitle, newAnswer);
 		axios
-			.get("/api/journal_entries/", { title: newTitle, answer: newAnswer })
-			.then(response => this.setState({ journalData: response.data }));
+			.post("/api/journal_entries/", { title: newTitle, answer: newAnswer })
+			.then(response =>
+				this.setState({
+					journalData: response.data,
+					createNewCommentFlag: false
+				})
+			);
 	}
 
 	render() {
