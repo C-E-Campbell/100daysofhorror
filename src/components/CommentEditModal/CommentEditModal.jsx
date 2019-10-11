@@ -6,16 +6,22 @@ class ModalModalExample extends React.Component {
 		super();
 		this.state = { modalOpen: true, title: "", answer: "" };
 	}
-
+	closeConfigShow = (closeOnEscape, closeOnDimmerClick) => () => {
+		this.setState({ closeOnEscape, closeOnDimmerClick, open: true });
+	};
+	close = () => this.setState({ open: false });
 	handleClose = () => this.setState({ modalOpen: false });
 
 	render() {
+		const { open, closeOnEscape, closeOnDimmerClick } = this.state;
 		return (
 			<Modal
 				open={this.state.modalOpen}
 				onClose={this.handleClose}
 				//basic
 				size='tiny'
+				closeOnDimmerClick={closeOnDimmerClick}
+				onClose={this.close}
 			>
 				<Modal.Header>Edit Movie Comment</Modal.Header>
 				<Modal.Content>
@@ -25,6 +31,7 @@ class ModalModalExample extends React.Component {
 						}}
 					>
 						<input
+							id='input-color'
 							onChange={e => {
 								this.setState({ title: e.target.value });
 							}}
