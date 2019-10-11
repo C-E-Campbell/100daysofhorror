@@ -3,7 +3,7 @@
 	height: 100vh;
 	text-align: center;
 	margin-bottom: 1rem;
-	background: #000;
+
 	padding-top: 5rem;
 	padding-bottom: rem;
 	position: relative;
@@ -12,6 +12,11 @@
 	justify-content: center;
 	align-items: center;
 	padding-bottom: 6rem;
+	background: linear-gradient(rgba(0, 0, 0, 0.918), rgba(0, 0, 0, 0.925)),
+		url("../../Assets/assets/image3.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 h2 {
 	color: #fff;

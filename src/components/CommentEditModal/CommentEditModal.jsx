@@ -31,15 +31,16 @@ class ModalModalExample extends React.Component {
 						}}
 					>
 						<input
+							placeholder={this.props.title}
 							style={{ color: "#222", border: "2px solid rgb(199, 194, 194)" }}
 							onChange={e => {
 								this.setState({ title: e.target.value });
 							}}
 							type='text'
-							placeholder='Enter movie name'
 						/>
 
 						<input
+							placeholder={this.props.answer}
 							style={{
 								color: "#222",
 								border: "2px solid rgb(199, 194, 194)",
@@ -48,7 +49,6 @@ class ModalModalExample extends React.Component {
 							onChange={e => {
 								this.setState({ answer: e.target.value });
 							}}
-							placeholder='Leave comment or review'
 						></input>
 						<Button
 							style={{ margin: "0 auto" }}

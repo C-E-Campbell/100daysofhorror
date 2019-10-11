@@ -2,7 +2,7 @@
 	color: #fff;
 }
 .journal {
-	background: linear-gradient(#000, rgba(0, 0, 0, 0.74)),
+	background: linear-gradient(#000, rgba(12, 13, 41, 0.541)),
 		url(../../Assets/assets/yellowhouse.jpeg);
 	height: 95vh;
 	background-position: top;
@@ -14,6 +14,16 @@
 		width: 100%;
 		max-width: 960px;
 		margin: 0 auto;
+		overflow-y: scroll;
+
+		button {
+			cursor: pointer;
+			background-color: transparent;
+			border: none;
+		}
+		.create {
+			margin-bottom: 1rem;
+		}
 	}
 
 	h4 {

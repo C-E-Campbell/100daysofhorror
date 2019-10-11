@@ -31,7 +31,7 @@ class Hero extends React.Component {
 				>
 					<div
 						style={{
-							top: this.state.offset / 3
+							top: this.state.offset / 4
 						}}
 						className='hero-text-container'
 					>

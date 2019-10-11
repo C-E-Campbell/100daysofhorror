@@ -17,6 +17,7 @@ export default class Journal extends Component {
 		this.deleteComment = this.deleteComment.bind(this);
 		this.getEditInfo = this.getEditInfo.bind(this);
 		this.addNewInfo = this.addNewInfo.bind(this);
+		this.createNewComment = this.createNewComment.bind(this);
 	}
 
 	componentDidMount() {
@@ -87,6 +88,8 @@ export default class Journal extends Component {
 		}, 100);
 	}
 
+	createNewComment() {}
+
 	render() {
 		const mappedData = this.state.journalData.map(entry => {
 			return (
@@ -102,17 +105,27 @@ export default class Journal extends Component {
 		});
 
 		if (this.state.entryFlag === true) {
-			return <CommentEditModal returnInfo={this.addNewInfo} />;
+			return (
+				<CommentEditModal
+					returnInfo={this.addNewInfo}
+					title={this.state.entryData.title}
+					answer={this.state.entryData.answer}
+				/>
+			);
 		} else {
 			return (
 				<div>
 					<Header />
-
 					<section className='journal'>
 						<h2>Spill Your Guts</h2>
 						<h4>Leave comments and opinions on the movies you watch!</h4>
 						<p></p>
 						<section className='journal-container'>
+							<div className='create'>
+								<button>Create New</button>
+								<i className='fas fa-plus'></i>
+							</div>
+
 							{/* MappedData is a list of JournalEntry Components sourced from journalAPI.json */}
 							<div>{mappedData}</div>
 						</section>

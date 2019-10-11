@@ -18,7 +18,7 @@ const AskUs = () => {
 				</div>
 			</section>
 			<Link id='pulse2' duration={400} smooth={true} to='header'>
-				<i id='pulse2' class='fas fa-arrow-alt-circle-up fa-2x'></i>
+				<i id='pulse2' className='fas fa-arrow-alt-circle-up fa-2x'></i>
 			</Link>
 		</section>
 	);
