@@ -1,7 +1,7 @@
 .movie-list {
 	grid-column: 6/8;
 	grid-row: 1/11;
-	background: linear-gradient(rgba(20, 20, 20, 0.897), rgba(17, 17, 17, 0.896)),
+	background: linear-gradient(rgba(0, 0, 0, 0.977), rgba(17, 17, 17, 0.976)),
 		url(../../Assets/assets/userbg.jpg);
 	background-size: cover;
 	border-radius: 4px;
@@ -19,6 +19,7 @@
 		border-radius: 4px;
 		border: none;
 		margin-bottom: 10px;
+		color: #333;
 	}
 
 	h2 {

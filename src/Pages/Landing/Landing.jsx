@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "../../Components/Hero/Hero";
 import About from "../../Components/About/About";
 import AskUs from "../../Components/AskUs/AskUs";
-//import Footer from "../../Components/Footer/Footer";
+import Footer from "../../Components/Footer/Footer";
 class Landing extends React.Component {
 	constructor() {
 		super();
@@ -15,7 +15,7 @@ class Landing extends React.Component {
 				<Hero />
 				<About />
 				<AskUs />
-				{/* <Footer /> */}
+				<Footer />
 			</div>
 		);
 	}
