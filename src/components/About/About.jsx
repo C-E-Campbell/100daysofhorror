@@ -48,8 +48,8 @@ class About extends React.Component {
 					</div>
 					<div className='about-item red'>I can't stalk ALL of you...</div>
 				</div>
-				<Link id='pulse' duration={700} smooth={true} to='footer'>
-					<i id='pulse' className='fas fa-arrow-alt-circle-down fa-2x'></i>
+				<Link duration={700} smooth={true} to='askus'>
+					<i id='pulse' className='fas fa-arrow-alt-circle-down fa-lg'></i>
 				</Link>
 			</div>
 		);

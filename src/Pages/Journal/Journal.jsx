@@ -100,7 +100,6 @@ export default class Journal extends Component {
 	}
 	// STEP TWO:
 	getNewCommentInfo(newTitle, newAnswer) {
-		console.log(newTitle, newAnswer);
 		axios
 			.post("/api/journal_entries/", { title: newTitle, answer: newAnswer })
 			.then(response =>
