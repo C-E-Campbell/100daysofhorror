@@ -9,15 +9,19 @@ export default class Journal extends Component {
 	constructor() {
 		super();
 		this.state = {
-			journalData: []
+			journalData: [],
+			entryData: [],
+			entryFlag: false
 		};
 		this.deleteComment = this.deleteComment.bind(this);
+		this.getEditInfo = this.getEditInfo.bind(this);
 	}
 
 	componentDidMount() {
 		this.getEntries();
 	}
 
+	// get all journal entries and puts them in state
 	getEntries = () => {
 		axios
 			.get("/api/journal_entries")
@@ -29,6 +33,7 @@ export default class Journal extends Component {
 			);
 	};
 
+	//delete an entry on icon click
 	deleteComment(id) {
 		axios
 			.delete(`/api/journal_entries/${id}`)
@@ -42,11 +47,26 @@ export default class Journal extends Component {
 			);
 	}
 
+	// get single entry info on icon click - put it in state
+	getEditInfo(id) {
+		axios
+			.get(`/api/journal_entries/${id}`)
+			.then(response => {
+				this.setState({ entryData: response.data, entryFlag: true });
+			})
+			.catch(err =>
+				console.log(
+					`problem with request coming from get(single) journal.jsx. ${err}`
+				)
+			);
+	}
+
 	render() {
 		const mappedData = this.state.journalData.map(entry => {
 			return (
 				<JournalEntry
 					deleteFunc={this.deleteComment}
+					getInfo={this.getEditInfo}
 					key={entry.id}
 					title={entry.title}
 					answer={entry.answer}

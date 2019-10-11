@@ -10,12 +10,12 @@ const JournalEntry = props => {
 				<p>{props.answer}</p>
 			</div>
 			<div className='icon-box'>
-				<i class='far fa-edit'></i>
+				<i className='far fa-edit' onClick={props.getInfo(props.id)}></i>
 				<i
 					onClick={() => {
 						props.deleteFunc(props.id);
 					}}
-					class='fas fa-minus-circle'
+					className='fas fa-minus-circle'
 				></i>
 			</div>
 		</section>

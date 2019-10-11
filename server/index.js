@@ -11,7 +11,9 @@ app.get("/api/movies", m.get);
 app.delete("/api/movie/:id", m.delete);
 
 // journal methods
-app.get("/api/journal_entries", j.get);
+app.get("/api/journal_entries", j.getAll);
+
+app.get("/api/journal_entries/:id", j.getSingle);
 
 app.post("/api/journal_entries/", j.post);
 
