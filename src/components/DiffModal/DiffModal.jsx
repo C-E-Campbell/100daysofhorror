@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./DiffModal.style.scss";
-import { Button, Header, Icon, Modal } from "semantic-ui-react";
+import { Button, Modal } from "semantic-ui-react";
 
 export default class ModalExampleControlled extends Component {
 	state = { modalOpen: true };
