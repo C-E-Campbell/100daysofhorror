@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import moment from "moment";
 import "./Login.style.scss";
-import UserBox from "../../Components/UserBox/UserBox";
-import MovieList from "../../Components/MovieList/MovieList";
-import DiffModal from "../../Components/DiffModal/DiffModal";
-import MovieDescription from "../../Components/MoveDescription/MovieDescription";
-import Header from "../../Components/Header/Header";
-import YouWin from "../../Components/YouWin/YouWin";
-import Footer from "../../Components/Footer/Footer";
+import UserBox from "../../components/UserBox/UserBox";
+import MovieList from "../../components/MovieList/MovieList";
+import DiffModal from "../../components/DiffModal/DiffModal";
+import MovieDescription from "../../components/MoveDescription/MovieDescription";
+import Header from "../../components/Header/Header";
+import YouWin from "../../components/YouWin/YouWin";
+import Footer from "../../components/Footer/Footer";
 import axios from "axios";
 
 export default class Login extends Component {

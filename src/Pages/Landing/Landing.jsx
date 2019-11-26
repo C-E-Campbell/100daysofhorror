@@ -1,8 +1,8 @@
 import React from "react";
-import Hero from "../../Components/Hero/Hero";
-import About from "../../Components/About/About";
-import AskUs from "../../Components/AskUs/AskUs";
-import Footer from "../../Components/Footer/Footer";
+import Hero from "../../components/Hero/Hero";
+import About from "../../components/About/About";
+import AskUs from "../../components/AskUs/AskUs";
+import Footer from "../../components/Footer/Footer";
 class Landing extends React.Component {
   constructor() {
     super();
