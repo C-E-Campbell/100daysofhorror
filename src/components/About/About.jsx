@@ -1,6 +1,6 @@
-import React from "react";
+import React from "./node_modules/react";
 import "./About.style.scss";
-import { Link } from "react-scroll";
+import { Link } from "./node_modules/react-scroll";
 class About extends React.Component {
 	constructor(props) {
 		super(props);

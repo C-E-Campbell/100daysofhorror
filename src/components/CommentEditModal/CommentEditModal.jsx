@@ -1,5 +1,5 @@
-import React from "react";
-import { Modal, Button } from "semantic-ui-react";
+import React from "./node_modules/react";
+import { Modal, Button } from "./node_modules/semantic-ui-react";
 import "./CommentEditModal.style.scss";
 class ModalModalExample extends React.Component {
 	constructor() {

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from "./node_modules/react";
 import "./MovieDescription.style.scss";
 
 import VideoModal from "../VideoModal/VideoModal";

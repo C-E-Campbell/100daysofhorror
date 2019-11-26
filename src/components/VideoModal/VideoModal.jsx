@@ -1,5 +1,5 @@
-import React from "react";
-import { Modal } from "semantic-ui-react";
+import React from "./node_modules/react";
+import { Modal } from "./node_modules/semantic-ui-react";
 import "./VideoModal.style.scss";
 const ModalBasicExample = props => (
 	<Modal

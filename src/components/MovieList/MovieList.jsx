@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from "./node_modules/react";
 import "./MovieList.style.scss";
 import MovieItem from "../MovieItem/MovieItem";
 

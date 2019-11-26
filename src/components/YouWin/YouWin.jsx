@@ -1,4 +1,4 @@
-import React from "react";
+import React from "./node_modules/react";
 import Header from "../Header/Header";
 import "./YouWin.style.scss";
 const YouWin = () => {
