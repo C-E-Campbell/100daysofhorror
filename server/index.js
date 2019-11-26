@@ -22,6 +22,7 @@ app.put("/api/journal_entries/:id", j.put);
 app.delete("/api/journal_entries/:id", j.delete);
 
 const port = process.env.PORT || 8293;
+const path = require("path");
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../build/index.html"));
 });
