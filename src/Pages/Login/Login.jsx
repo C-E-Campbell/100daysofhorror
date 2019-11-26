@@ -43,7 +43,7 @@ export default class Login extends Component {
     const { omdbID, youtubeID } = movieData;
 
     axios
-      .get(`http://www.omdbapi.com/?apikey=4c3ee338&i=${omdbID}&plot=full`)
+      .get(`https://www.omdbapi.com/?apikey=4c3ee338&i=${omdbID}&plot=full`)
       .then(response => {
         this.setState({ currentMovie: response.data, trailerID: youtubeID });
       });
