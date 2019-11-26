@@ -52,7 +52,7 @@ const AskUs = () => {
 					</form>
 				</div>
 			</section>
-			<Link duration={400} smooth={true} to='header'>
+			<Link duration={500} smooth={true} to='header'>
 				<i id='pulse2' className='fas fa-arrow-alt-circle-up fa-lg'></i>
 			</Link>
 		</section>
